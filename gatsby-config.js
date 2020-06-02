@@ -1,18 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: `Rotem Petranker`,
-    description: `This is Rotem Petranker's `,
-    author: `@gatsbyjs`,
-    menuLinks: [
-      { name: "home", link: "/" },
-      { name: "academical background", link: "/academia" },
-      { name: "speaking", link: "speaking" },
-      { name: "consulting", link: "/consulting" },
-      { name: "media", link: "/media" },
-      { name: "about", link: "/about" },
-      { name: "contact", link: "contact" },
-    ],
-  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -40,4 +26,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};

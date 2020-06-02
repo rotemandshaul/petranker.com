@@ -1,24 +1,21 @@
-import React from "react"
-// import { Link } from "gatsby"
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { headData } from '../mock/data';
+import Home from '../components/Home/Home';
+import '../style/layout/layout.css';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+export default () => {
+  const { title, lang, description } = headData;
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div>
-      <h1>Rotem Petranker</h1>
-      <p>
-        Clinical psychology PhD student, Associate Director, Center for
-        Psychedelic Studies at the University of Toronto
-      </p>
-      <div style={{ maxWidth: `250px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div>
-    </div>
-  </Layout>
-)
-
-export default IndexPage
+  return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title}</title>
+        <html lang={lang} />
+        <meta name="description" content={description} />
+      </Helmet>
+      <Home />
+    </>
+  );
+};

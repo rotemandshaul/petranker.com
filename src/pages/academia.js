@@ -1,17 +1,20 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import PageHeader from "../components/pageHeader"
+import React from 'react';
+import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
+import Layout from '../components/Layout/layout';
+import PageHeader from '../components/pageHeader';
 
 const Academia = () => (
-  <Layout>
-    <SEO title="Academic Background" />
-    <PageHeader headerText="This is Rotem's Academic background" />
-    <p>Here are all of Rotem's academic achievments</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
+  <>
+    <Helmet>
+      <title>Academia</title>
+    </Helmet>
+    <Layout>
+      <PageHeader headerText="This is Rotem's Academic background" />
+      <p>Here are all of Rotems academic achievments</p>
+      <Link to="/">Go back to the homepage</Link>
+    </Layout>
+  </>
+);
 
-export default Academia
+export default Academia;

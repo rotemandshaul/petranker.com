@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 const Header = ({ siteTitle, menuLinks }) => (
   <header
@@ -29,8 +29,8 @@ const Header = ({ siteTitle, menuLinks }) => (
       </h1>
       <div>
         <nav>
-          <ul style={{ display: "flex", flex: 1 }}>
-            {menuLinks.map(link => (
+          <ul style={{ display: 'flex', flex: 1 }}>
+            {menuLinks.map((link) => (
               <li
                 key={link.name}
                 style={{
@@ -38,10 +38,7 @@ const Header = ({ siteTitle, menuLinks }) => (
                   padding: `1rem`,
                 }}
               >
-                <Link
-                  style={{ color: `white`, textDecoration: "none" }}
-                  to={link.link}
-                >
+                <Link style={{ color: `white`, textDecoration: 'none' }} to={link.link}>
                   {link.name}
                 </Link>
               </li>
@@ -51,14 +48,12 @@ const Header = ({ siteTitle, menuLinks }) => (
       </div>
     </div>
   </header>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+  /* eslint-disable react/forbid-prop-types */
+  menuLinks: PropTypes.array,
+};
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;
