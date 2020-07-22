@@ -1,19 +1,22 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import Layout from '../components/Layout/layout';
+import About from '../components/About/About';
+import { headData } from '../mock/data';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style/main.scss';
 
-const About = () => (
-  <>
-    <Helmet>
-      <title>About</title>
-    </Helmet>
-    <Layout>
-      <h1>This is the About page</h1>
-      <p>Here is everything Rotem wants you to know about him</p>
-      <Link to="/">Go back to the homepage</Link>
-    </Layout>
-  </>
-);
+export default () => {
+  const { lang, description } = headData;
 
-export default About;
+  return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>About Rotem</title>
+        <html lang={lang} />
+        <meta name="description" content={description} />
+      </Helmet>
+      <About />
+    </>
+  );
+};

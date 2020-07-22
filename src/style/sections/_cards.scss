@@ -1,0 +1,145 @@
+#cards-section {
+  background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  color: $white-color;
+  height: 100%;
+  border-top: 0px;
+  padding-top: 10rem;
+
+  &-top {
+    @extend #cards-section;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+
+  &-bottom {
+    @extend #cards-section;
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+
+    .section-title {
+      padding-top: 15rem;
+    }
+  }
+
+  .card-group {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-bottom: 10rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+      padding-bottom: 0rem;
+    }
+  }
+
+  .card {
+    display: flex;
+    background: none;
+    border: none;
+    position: relative;
+    margin: 5rem 0rem;
+    text-align: left;
+    align-content: space-between;
+
+    @include respond(phone) {
+      text-align: center;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  .cards-image-wrapper {
+    height: 155px;
+  }
+  .card-image {
+    width: 150px;
+    border: 0;
+    max-width: 100%;
+    display: inline-block;
+
+    &-bottom {
+      width: 100px;
+      border: 0;
+      max-width: 100%;
+      display: inline-block;
+    }
+  }
+
+  .card-title {
+    font-size: $mid-font-size;
+    line-height: 3rem;
+    font-weight: bold;
+    margin: 2.5rem 0rem;
+    padding-right: 8rem;
+    height: 120px;
+
+    &-bottom {
+      @extend .card-title;
+      height: 60px;
+    }
+
+    @include respond(phone) {
+      height: auto;
+      padding-left: 10rem;
+    }
+
+    @include respond(phone-xs) {
+      height: auto;
+      padding: 0;
+    }
+  }
+
+  .card-text {
+    padding: 0rem;
+    height: 280px;
+    padding-right: 6rem;
+    line-height: 1.75em;
+    font-size: 16px;
+
+    &-bottom {
+      @extend .card-text;
+      height: 200px;
+    }
+
+    @include respond(phone) {
+      padding-left: 6rem;
+      height: auto;
+      font-size: $small-font-size;
+    }
+
+    @include respond(phone-xs) {
+      height: auto;
+      padding: 0;
+    }
+  }
+
+  .card-footer {
+    border-top: none;
+    background: transparent;
+    padding: 0;
+
+    @include respond(tab-land) {
+      padding-top: 2rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+    padding: 10rem 0rem;
+
+    .card-group {
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      margin: 0;
+    }
+  }
+
+  @include respond(tab-port) {
+    font-size: $small-font-size;
+  }
+}

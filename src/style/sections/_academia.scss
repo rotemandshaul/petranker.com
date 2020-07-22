@@ -1,0 +1,71 @@
+#academia {
+  padding: 0;
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .hero-wrapper {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-content {
+    color: 'white';
+    display: 'flex';
+    flex-direction: 'column';
+    text-align: left;
+    padding-right: 100px;
+    background-image: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.06) 50%, transparent);
+    width: 40%;
+
+    @include respond(tab-port) {
+      text-align: center;
+      width: 100%;
+      padding-right: 15px;
+    }
+  }
+
+  h1 {
+    padding-bottom: 2rem;
+    line-height: 5rem;
+
+    @include respond(big-desktop) {
+      line-height: 200%;
+    }
+  }
+
+  p {
+    padding-bottom: 2rem;
+    font-size: $small-font-size;
+    padding-left: 1rem;
+
+    @include respond(big-desktop) {
+      font-size: $mid-font-size;
+      line-height: 200%;
+    }
+  }
+
+  .btn-holder {
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+  }
+}
+
+#publications {
+  background-color: white;
+  @include respond(big-desktop) {
+    padding: 20px;
+    padding-bottom: 10rem;
+
+    h1 {
+      padding: 10rem;
+    }
+  }
+
+  .fa,
+  .fa-sort {
+    font-size: 75%;
+  }
+}

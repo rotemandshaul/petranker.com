@@ -1,0 +1,111 @@
+#media-header {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  h1 {
+    font-size: $big-font-size;
+    background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+#media-title {
+  margin: 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(#e0eafc, #cfdef3);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+  h1 {
+    font-size: $big-font-size;
+    font-weight: 700;
+    margin-bottom: 6rem;
+    background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  i {
+    font-size: $big-font-size;
+    background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @include respond(tab-port) {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}
+
+#media-preview-section-video {
+  @extend #media-preview-section;
+  padding-top: 5rem;
+
+  a {
+    font-size: $small-font-size;
+  }
+
+  .media-video-holder {
+    padding-bottom: 5rem;
+  }
+}
+
+#podcasts {
+  background-image: linear-gradient(#e0eafc, #cfdef3);
+
+  .media-pod-item-body {
+    padding-left: 10rem;
+    text-align: left;
+
+    a {
+      font-size: $small-font-size;
+      background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+
+      &:hover {
+        font-size: 150%;
+      }
+    }
+  }
+
+  .media-pod-list {
+    padding-bottom: 5rem;
+  }
+
+  .video-button-holder {
+    padding-bottom: 5rem;
+    a {
+      font-size: $small-font-size;
+    }
+  }
+}
+
+#articles {
+}
+
+#media-footer {
+  margin: 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(#e0eafc, #cfdef3);
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+
+  i {
+    font-size: 6rem;
+    background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @include respond(tab-port) {
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+}

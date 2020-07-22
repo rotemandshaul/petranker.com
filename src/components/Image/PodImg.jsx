@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 
-const HeadshotImg = ({ filename, alt }) => (
+const PodImg = ({ filename, alt }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -13,7 +13,7 @@ const HeadshotImg = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 350) {
+                fixed(width: 50) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -35,9 +35,9 @@ const HeadshotImg = ({ filename, alt }) => (
   />
 );
 
-HeadshotImg.propTypes = {
+PodImg.propTypes = {
   filename: PropTypes.string,
   alt: PropTypes.string,
 };
 
-export default HeadshotImg;
+export default PodImg;

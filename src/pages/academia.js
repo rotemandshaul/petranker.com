@@ -1,20 +1,22 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import Layout from '../components/Layout/layout';
-import PageHeader from '../components/pageHeader';
+import Academia from '../components/Academia/Academia';
+import { headData } from '../mock/data';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style/main.scss';
 
-const Academia = () => (
-  <>
-    <Helmet>
-      <title>Academia</title>
-    </Helmet>
-    <Layout>
-      <PageHeader headerText="This is Rotem's Academic background" />
-      <p>Here are all of Rotems academic achievments</p>
-      <Link to="/">Go back to the homepage</Link>
-    </Layout>
-  </>
-);
+export default () => {
+  const { lang, description } = headData;
 
-export default Academia;
+  return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Academia</title>
+        <html lang={lang} />
+        <meta name="description" content={description} />
+      </Helmet>
+      <Academia />
+    </>
+  );
+};

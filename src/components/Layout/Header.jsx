@@ -1,54 +1,41 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
+import useDocumentScrollThrottled from './useDocumentScrollThrottled';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
-const Header = ({ siteTitle, menuLinks }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      <div>
-        <nav>
-          <ul style={{ display: 'flex', flex: 1 }}>
-            {menuLinks.map((link) => (
-              <li
-                key={link.name}
-                style={{
-                  listStyleType: `none`,
-                  padding: `1rem`,
-                }}
-              >
-                <Link style={{ color: `white`, textDecoration: 'none' }} to={link.link}>
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-);
+const Header = ({ siteTitle, menuLinks }) => {
+  const [showBorder, setShowBorder] = useState(false);
+
+  useDocumentScrollThrottled((callbackData) => {
+    const { currentScrollTop } = callbackData;
+
+    setShowBorder(currentScrollTop > 2);
+  });
+
+  const borderBottomStyle = showBorder ? 'border' : '';
+
+  return (
+    <Navbar expand="md" sticky="top" className={`navbar-${borderBottomStyle}`}>
+      <Navbar.Brand id="nav-brand" href="/">
+        {siteTitle}
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav as="ul" id="nav">
+          {menuLinks.map((link) => (
+            <Nav.Item as="li">
+              <Link to={link.link} eventKey={link.name} activeStyle={{ borderBottom: 'solid 2px' }}>
+                {link.name}
+              </Link>
+            </Nav.Item>
+          ))}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+};
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

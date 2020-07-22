@@ -1,0 +1,135 @@
+#about-top {
+  display: flex;
+  height: 100%;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+
+  .about-page-header {
+    padding-bottom: 5rem;
+  }
+
+  .about-top-wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    @include respond(tab-port) {
+      padding-top: 3rem;
+    }
+  }
+
+  .about-text-holder {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    p {
+      font-size: $small-font-size;
+    }
+
+    @include respond(tab-port) {
+      text-align: center;
+      padding: 5rem;
+
+      p {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  .about-image-holder {
+    height: 60vh;
+    padding-bottom: 2rem;
+
+    .about-section-top-image {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      -webkit-clip-path: ellipse(50% 42% at 50% 42%);
+      clip-path: ellipse(50% 42% at 50% 42%);
+
+      @include respond(tab-port) {
+        -webkit-clip-path: none;
+        clip-path: none;
+      }
+    }
+
+    .photo-credit {
+      display: flex;
+      justify-content: flex-end;
+      p {
+        align-self: flex-end;
+        padding-right: 1rem;
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+#about-bottom {
+  display: flex;
+  height: 100%;
+  background-image: linear-gradient(#e0eafc, #cfdef3);
+
+  @include respond(tab-port) {
+    -webkit-clip-path: none;
+    clip-path: none;
+    padding-top: 0;
+  }
+
+  .about-bottom-wrapper {
+    display: flex;
+    position: relative;
+    padding: 5rem 0;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  .about-text-holder {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    text-align: left;
+    justify-content: space-between;
+    padding-right: 5rem;
+
+    p {
+      font-size: $small-font-size;
+    }
+
+    @include respond(tab-port) {
+      text-align: center;
+      padding: 0;
+      padding-top: 5rem;
+
+      p {
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}
+
+#about-doggo {
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 0;
+
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-section-bottom-image {
+    width: 40vw;
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(40% at 50% 50%);
+
+    @include respond(tab-port) {
+      width: 100vw;
+    }
+  }
+}

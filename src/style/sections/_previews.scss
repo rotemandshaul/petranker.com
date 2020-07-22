@@ -1,0 +1,326 @@
+#media-preview-section {
+  background-color: $white-color;
+  color: $dark-blue-text;
+  padding-top: 15rem;
+
+  .media-header {
+    padding-bottom: 2rem;
+    text-align: left;
+
+    &-small {
+      font-size: $mid-font-size;
+    }
+
+    @include respond(tab-land) {
+      text-align: center;
+    }
+  }
+
+  .media-video {
+    position: relative;
+    margin: 45px 0 45px 0;
+  }
+
+  .media-video-holder {
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+    // width: 950px;
+
+    @include respond(tab-land) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .media-video-info {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    align-items: left;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    background-image: linear-gradient(0deg, #000, rgba(0, 0, 0, 0.06) 50%, transparent);
+
+    .video-info-title {
+      position: absolute;
+      padding-bottom: 2rem;
+      color: white;
+      font-weight: bold;
+
+      @include respond(tab-port) {
+        font-size: $small-font-size;
+      }
+    }
+
+    .video-play-link {
+      position: absolute;
+      align-self: center;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    .btn:focus {
+      /* outline: 5px auto -webkit-focus-ring-color; */
+      outline-offset: -2px;
+    }
+  }
+
+  .media-video-main {
+    flex-basis: 50%;
+
+    @include respond(tab-land) {
+      flex-basis: 100%;
+      padding-bottom: 1rem;
+    }
+  }
+
+  .media-video-item {
+    display: flex;
+    overflow: hidden;
+    width: 460px;
+    height: 362px;
+    overflow: hidden;
+    border-radius: 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .play_icon {
+      width: 60px;
+    }
+
+    @include respond(tab-land) {
+      width: 100%;
+      height: 270px;
+    }
+
+    &-small {
+      @extend .media-video-item;
+      width: 230px;
+      height: 176px;
+      margin-right: 0.5%;
+      margin-bottom: 10px;
+      margin-left: 0.5%;
+
+      h2 {
+        font-size: 1.2rem;
+        padding-right: 1rem;
+        line-height: 1.7rem;
+      }
+
+      .play_icon {
+        width: 40px;
+      }
+
+      @include respond(tab-land) {
+        width: 100%;
+        height: 270px;
+
+        .play_icon {
+          width: 60px;
+        }
+      }
+    }
+  }
+
+  .media-video-collection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+
+    @include respond(tab-land) {
+      flex-basis: 100%;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .media-pod-and-articles-holder {
+    display: flex;
+    justify-content: space-between;
+    // align-items: stretch;
+    width: 950px;
+
+    @include respond(tab-land) {
+      flex-wrap: wrap;
+      width: auto;
+    }
+  }
+
+  .media-pod-holder {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 0 1 auto;
+
+    @include respond(tab-land) {
+      max-width: 100%;
+      align-items: center;
+    }
+  }
+
+  .media-pod-list {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 4rem;
+    padding-right: 10rem;
+
+    @include respond(tab-land) {
+      padding: 0 0 2rem;
+    }
+  }
+
+  .media-pod-item {
+    &-body {
+      padding-left: 30px;
+    }
+
+    &-title {
+      margin: 0px;
+    }
+  }
+
+  .media-articles-holder {
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 0 auto;
+
+    @include respond(tab-land) {
+      width: 100%;
+      max-width: 100%;
+      padding-top: 5rem;
+      align-items: center;
+    }
+  }
+
+  .carousel-holder {
+    margin-bottom: 4rem;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    overflow: hidden;
+
+    @include respond(tab-land) {
+      text-align: center;
+    }
+  }
+  .carousel-item {
+    height: 100%;
+  }
+
+  .carousel-card-body {
+    height: 100%;
+    display: flex;
+    align-content: flex-end;
+    padding: 0;
+
+    .h5 {
+      padding-top: 50%;
+
+      @include respond(tab-land) {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .carousel,
+  .slide {
+    height: 100%;
+    display: flex;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-self: flex-end;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50%;
+
+    &-icon {
+      position: relative;
+      height: 30px;
+      width: 30px;
+      background-size: 100%, 100%;
+      background-repeat: no-repeat;
+      background-color: $secondary-color;
+
+      &:after {
+        height: 30px;
+        width: 30px;
+      }
+
+      &:after {
+        height: 30px;
+        width: 30px;
+      }
+
+      @include respond(tab-land) {
+        height: 20px;
+        width: 20px;
+      }
+    }
+  }
+
+  .card-title {
+    line-height: 2.5rem;
+  }
+
+  .card-deck {
+    height: 100%;
+    display: flex;
+  }
+}
+
+.iframe-item {
+  border-radius: 1rem;
+  border: none;
+
+  @include respond(tab-port) {
+    border-radius: 0;
+    width: 100vw;
+    height: auto;
+  }
+}
+
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0.5;
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: 0px;
+  width: 940px;
+  height: 528px;
+  transform: translateY(50%);
+}
+
+.video-button-holder {
+  float: center;
+}

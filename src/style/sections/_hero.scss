@@ -1,0 +1,110 @@
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background-image: linear-gradient(#e0eafc, #cfdef3);
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem 10% 5.6rem;
+  margin-bottom: 0;
+  z-index: -1;
+
+  @include respond(phone) {
+    padding: 0rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 0rem;
+    }
+  }
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
+    text-align: left;
+    background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+      text-align: center;
+    }
+  }
+
+  .hero-text {
+    text-align: left;
+    margin-bottom: 3.2rem;
+    font-size: 2.3rem;
+    font-weight: 700;
+    background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+  }
+
+  .hero-image-holder {
+    .hero-image {
+      @include respond(tab-port) {
+        padding-bottom: 6.4rem;
+      }
+      @include respond(tab-land) {
+        height: 100%;
+      }
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+    margin-top: 8rem;
+
+    @include respond(tab-port) {
+      justify-content: center;
+      padding-bottom: 8rem;
+    }
+
+    @include respond(phone) {
+      padding-bottom: 8rem;
+    }
+
+    & a {
+      font-size: 2.4rem;
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
