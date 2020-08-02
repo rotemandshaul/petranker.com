@@ -1,8 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "petranker.com",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Rotem Petranker's website",
   "version": "0.1.0",
+  "main": "index.js",
   "dependencies": {
     "bootstrap": "^3.4.1",
     "gatsby": "^2.21.37",
@@ -59,7 +60,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/shaulitto/petranker.com"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
