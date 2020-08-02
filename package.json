@@ -41,6 +41,7 @@
     "lint-staged": "^10.2.7",
     "prettier": "2.0.5"
   },
+  "homepage": "https://shaulitto.github.io/petranker.com/",
   "keywords": [
     "gatsby"
   ],
@@ -53,7 +54,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
