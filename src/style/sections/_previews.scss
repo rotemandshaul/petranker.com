@@ -40,7 +40,6 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
-    padding: 15px;
     align-items: left;
     justify-content: flex-end;
     flex-direction: column;
@@ -49,7 +48,9 @@
 
     .video-info-title {
       position: absolute;
-      padding-bottom: 2rem;
+      // padding-bottom: 2rem;
+      padding-left: 15px;
+      padding-right: 10px;
       color: white;
       font-weight: bold;
 
