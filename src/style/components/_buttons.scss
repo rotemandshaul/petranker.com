@@ -66,9 +66,6 @@
 
   &-bottom {
     @extend .cta-btn--cards;
-    @include respond(tab-port) {
-      font-size: 15px;
-    }
   }
 
   &::after {
@@ -88,6 +85,10 @@
     @extend .cta-btn--cards;
     font-size: 3rem;
     border-width: 0.5rem;
+
+    @include respond(phone) {
+      font-size: 2rem;
+    }
   }
 
   &-consulting {

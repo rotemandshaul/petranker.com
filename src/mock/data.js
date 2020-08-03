@@ -41,11 +41,11 @@ export const cardsData = [
     fade: 'left',
   },
   {
-    id: 'tcps-card',
+    id: 'ccps-card',
     logo: 'tcps_logo.png',
-    title: 'Toronto Centre for Psychedelic Science',
-    text: `Rotem co founded the Toronto Centre for Psychedelic Science in 2019, with the aim of offering transparent and rigorous consulting services.`,
-    btntext: 'TCPS',
+    title: 'Canadian Centre for Psychedelic Science',
+    text: `Rotem co founded the Canadian Centre for Psychedelic Science in 2019, with the aim of offering transparent and rigorous consulting services.`,
+    btntext: 'CCPS',
     url: 'https://www.psychedelicscience.ca/',
     fade: 'bottom',
   },
@@ -317,14 +317,6 @@ export const academiaData = {
     },
     {
       id: 'publication9',
-      title: 'Psychedelic microdosing benefits and challenges: an empirical codebook',
-      url:
-        'https://harmreductionjournal.biomedcentral.com/articles/10.1186/s12954-019-0308-4?optIn=true',
-      year: '2019',
-      month: `July`,
-    },
-    {
-      id: 'publication10',
       title:
         'Semantic and affective representations of valence: Prediction of autonomic and facial responses from feelings-focused and knowledge-focused self-reports',
       url: 'https://psycnet.apa.org/doiLanding?doi=10.1037%2Femo0000567',
@@ -332,7 +324,7 @@ export const academiaData = {
       month: `February`,
     },
     {
-      id: 'publication11',
+      id: 'publication10',
       title: 'Psychedelic Research and the Need for Transparency: Polishing Alice’s Looking Glass',
       url:
         'https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01681/full?fbclid=IwAR1PWW9VKcL5qEcKdQ8av1N-fTq8BrJpVs14ESYKslOviIbAN7jybAusz4k',

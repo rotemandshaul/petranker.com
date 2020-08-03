@@ -27,8 +27,11 @@
     justify-content: space-between;
     padding-bottom: 10rem;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       flex-direction: column;
+    }
+
+    @include respond(phone) {
       padding-bottom: 0rem;
     }
   }
@@ -42,7 +45,7 @@
     text-align: left;
     align-content: space-between;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       text-align: center;
       flex-direction: column;
       width: 100%;
@@ -52,6 +55,7 @@
   .cards-image-wrapper {
     height: 155px;
   }
+
   .card-image {
     width: 150px;
     border: 0;
@@ -74,19 +78,13 @@
     padding-right: 8rem;
     height: 120px;
 
+    @include respond(tab-port) {
+      padding-right: 0;
+    }
+
     &-bottom {
       @extend .card-title;
       height: 60px;
-    }
-
-    @include respond(phone) {
-      height: auto;
-      padding-left: 10rem;
-    }
-
-    @include respond(phone-xs) {
-      height: auto;
-      padding: 0;
     }
   }
 
@@ -102,15 +100,14 @@
       height: 200px;
     }
 
-    @include respond(phone) {
-      padding-left: 6rem;
+    @include respond(tab-port) {
       height: auto;
       font-size: $small-font-size;
+      padding: 0 10rem 5rem;
     }
 
-    @include respond(phone-xs) {
-      height: auto;
-      padding: 0;
+    @include respond(phone) {
+      padding: 0 0 5rem 0;
     }
   }
 
@@ -136,6 +133,7 @@
 
     .section-title {
       margin: 0;
+      padding: 0;
     }
   }
 

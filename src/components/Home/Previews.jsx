@@ -141,6 +141,42 @@ const Previews = () => {
                     ))}
                   </CardDeck>
                 </Carousel.Item>
+                <Carousel.Item>
+                  <CardDeck>
+                    {articles.slice(4, 6).map((article) => (
+                      <Card key={article.id} style={{ border: 'transparent' }}>
+                        <div>
+                          <ArticleImg alt="article-preview" filename={article.img} />
+                        </div>
+                        <Card.Body className="carousel-card-body">
+                          <Card.Title>
+                            <a href={article.url} target="_blank">
+                              {article.title}
+                            </a>
+                          </Card.Title>
+                        </Card.Body>
+                      </Card>
+                    ))}
+                  </CardDeck>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <CardDeck>
+                    {articles.slice(6, 8).map((article) => (
+                      <Card key={article.id} style={{ border: 'transparent' }}>
+                        <div>
+                          <ArticleImg alt="article-preview" filename={article.img} />
+                        </div>
+                        <Card.Body className="carousel-card-body">
+                          <Card.Title>
+                            <a href={article.url} target="_blank">
+                              {article.title}
+                            </a>
+                          </Card.Title>
+                        </Card.Body>
+                      </Card>
+                    ))}
+                  </CardDeck>
+                </Carousel.Item>
               </Carousel>
             </div>
             <div>

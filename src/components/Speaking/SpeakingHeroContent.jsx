@@ -35,18 +35,15 @@ const AcademiaHeroContent = ({ filename, alt, classname }) => (
           <div className="hero-content">
             <h1 style={{ paddingBottom: '2rem' }}>Speaking & Talks</h1>
             <p>
-              Rotem can give talks in a variety of venues <br /> to people with varied previous
-              knowledge <br /> about psychedelics and microdosing.
+              Rotem can give talks in a variety of venues to people with varied previous knowledge
+              about psychedelics and microdosing.
             </p>
             <p>
-              His experience includes giving talks <br />
-              online, to classes, businesses,
-              <br /> and at conferences.
+              His experience includes giving talks online, to classes, businesses, and at
+              conferences.
             </p>
             <p>
-              Get in touch for more information
-              <br /> about Rotem’s availability and to create a talk
-              <br />
+              Get in touch for more information about Rotem’s availability and to create a talk
               specifically tailored for your needs.
             </p>
             <div className="btn-holder">

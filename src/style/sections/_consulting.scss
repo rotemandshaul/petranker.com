@@ -44,6 +44,7 @@
       clip-path: circle(120% at 50% 0);
       -webkit-clip-path: circle(120% at 50% 0);
       height: auto;
+      padding-bottom: 6rem;
     }
   }
 
@@ -82,9 +83,10 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
     @include respond(tab-port) {
       padding-top: 25%;
-      padding-bottom: 25%;
+      padding-bottom: 15rem;
     }
   }
 
@@ -92,133 +94,3 @@
     width: 50%;
   }
 }
-
-// #consulting {
-//   background-color: #e9e9e9;
-//   display: flex;
-//   justify-content: space-between;
-//   padding: 0;
-
-//   .circle {
-//     -webkit-clip-path: circle(100% at left);
-//     clip-path: circle(100% at left);
-//     background-color: $secondary-color;
-//     background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
-//   }
-
-//   .container {
-//     padding: 0;
-//     margin: 0;
-
-//     // @include respond(big-desktop) {
-//     display: flex;
-//     height: 100%;
-//     // }
-
-//     @include respond(tab-port) {
-//       flex-direction: column;
-//       height: auto;
-//     }
-//   }
-
-//   .consulting-banner {
-//     color: $white-color;
-
-//     // @include respond(big-desktop) {
-//     display: flex;
-//     text-align: left;
-//     height: 80vh;
-//     // flex-basis: 50%;
-
-//     h1 {
-//       font-size: $big-font-size;
-//     }
-//     p {
-//       font-size: $mid-font-size;
-//       padding-right: 10rem;
-//     }
-//     // }
-
-//     @include respond(tab-port) {
-//       height: 50vh;
-//       -webkit-clip-path: circle(75% at top);
-//       clip-path: circle(75% at top);
-//       text-align: center;
-//     }
-
-//     @include respond(phone) {
-//       height: 80vh;
-//       -webkit-clip-path: circle(100% at top);
-//       clip-path: circle(100% at top);
-//     }
-
-//     @include respond(phone-xs) {
-//       line-height: 3rem;
-//       height: 120vh;
-//     }
-
-//     .consulting-text-box {
-//       p > a {
-//         color: yellow;
-//         font-size: 100%;
-//       }
-
-//       //   @include respond(big-desktop) {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-evenly;
-//       height: 100%;
-//       padding-left: 5rem;
-//       //   }
-
-//       @include respond(tab-port) {
-//         height: 100%;
-//         overflow: hidden;
-//         padding-top: 2rem;
-//         padding-right: 3rem;
-//         padding-left: 3rem;
-//         justify-content: flex-start;
-
-//         p,
-//         h1 {
-//           padding-bottom: 2rem;
-//         }
-//       }
-
-//       @include respond(phone-xs) {
-//         text-align: center;
-//         line-height: 3rem;
-//         height: 120vh;
-//         padding: 2rem;
-//       }
-//     }
-//   }
-
-//   .partner-holder {
-//     // @include respond(big-desktop) {
-//     flex-basis: 50%;
-//     // }
-
-//     .consulting-partner-link {
-//       .partner-logo {
-//         border-radius: 2rem;
-//       }
-
-//       //   @include respond(big-desktop) {
-//       width: 400px;
-//       margin: auto;
-
-//       //   }
-
-//       @include respond(tab-port) {
-//         width: 50vw;
-//         margin: auto;
-//         padding-top: 0;
-//       }
-
-//       @include respond(phone) {
-//         width: 100vw;
-//         padding-bottom: 50%;
-//       }
-//     }
-//   }
