@@ -21,19 +21,21 @@ const Footer = ({ siteTitle, menuLinks }) => (
           ))}
         </Nav>
       </Navbar>
-      designed by{' '}
-      <a href="https://github.com/shaulitto" target="_blank">
-        shaul
-      </a>{' '}
-      ©Rotem Petranker.All rights reserved <br /> Icons made by{' '}
-      <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">
-        Eucalyp
-      </a>{' '}
-      from{' '}
-      <a href="https://www.flaticon.com/" title="Flaticon">
-        {' '}
-        www.flaticon.com
-      </a>
+      <div className="credits-holder">
+        Designed by{' '}
+        <a href="https://github.com/shaulitto" target="_blank">
+          born_dead
+        </a>{' '}
+        ©Rotem Petranker.All rights reserved <br /> Icons made by{' '}
+        <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">
+          Eucalyp
+        </a>{' '}
+        from{' '}
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          {' '}
+          www.flaticon.com
+        </a>
+      </div>
     </Container>
   </section>
 );

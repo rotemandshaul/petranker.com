@@ -1,0 +1,42 @@
+#form-section {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 1rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
+
+    @include respond(tab-port) {
+      padding: 0;
+    }
+  }
+
+  p {
+    width: 100%;
+
+    label {
+      width: 100%;
+
+      .name-input,
+      .email-input,
+      .message-input {
+        outline: none;
+        display: flex;
+        padding: 1rem;
+        width: 100%;
+        border-radius: 1rem;
+        border: 2px solid #e0eafc;
+      }
+      ::placeholder {
+        color: lightgray;
+        opacity: 1;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: $primary-color;
+      }
+    }
+  }
+}

@@ -10,20 +10,20 @@ export const headData = {
 
 // Menu Links
 export const menuLinks = [
-  { name: 'Home', link: '/' },
-  { name: 'Academic Background', link: '/academia' },
-  { name: 'Speaking', link: '/speaking' },
-  { name: 'Consulting', link: '/consulting' },
-  { name: 'Media', link: '/media' },
-  { name: 'About Rotem', link: '/about' },
-  { name: 'Contact', link: '/contact' },
+  { name: 'Home', link: '/', id: 'link0' },
+  { name: 'Academic Background', link: '/academia', id: 'link1' },
+  { name: 'Speaking', link: '/speaking', id: 'link2' },
+  { name: 'Consulting', link: '/consulting', id: 'link3' },
+  { name: 'Media', link: '/media', id: 'link4' },
+  { name: 'About Rotem', link: '/about', id: 'link5' },
+  { name: 'Contact', link: '/contact', id: 'link6' },
 ];
 
 // HERO DATA
 export const heroData = {
   img: 'headshot.png',
   title: 'Rotem Petranker',
-  line1: `Director, Toronto Centre for Psychedelic Science`,
+  line1: `Director, Canadian Centre for Psychedelic Science`,
   line2: `Associate Director, Psychedelic Studies Research Program`,
   line3: `PhD Student, Clinical Psychology, Boredom Lab, York University`,
   cta: `My Work`,
@@ -88,6 +88,20 @@ export const cardsData = [
 // ARTICLES
 export const articlesData = [
   {
+    id: `article-1`,
+    title: `MEET THE WOMAN WHO WANTS TO SELL PSYCHEDELIC DRUGS TO SCIENTISTS`,
+    url: `https://futurism.com/neoscope/woman-sell-psychedelic-drugs-scientists`,
+    date: `08/2020`,
+    img: 'article-1.png',
+  },
+  {
+    id: `article0`,
+    title: `To Prevent Corruption, Psychedelics Researchers Call for Ethics Guidelines`,
+    url: `https://www.lucid.news/psychedelics-researchers-call-for-ethics-guidelines/`,
+    date: `07/2020`,
+    img: 'article0.png',
+  },
+  {
     id: `article1`,
     title: `Benefits and challenges of psychedelic microdosing – as reported by microdosers `,
     url: `http://tinyurl.com/y3tfabba`,
@@ -100,13 +114,6 @@ export const articlesData = [
     url: `https://theconversation.com/microdosing-psychedelics-improves-mood-focus-and-creativity-120279`,
     date: `07/2019`,
     img: 'article2.png',
-  },
-  {
-    id: `article3`,
-    title: `The Trip of a Lifetime`,
-    url: `https://www.marieclaire.com/health-fitness/a28266516/microdosing-psilocybin-anxiety/`,
-    date: `07/2019`,
-    img: 'article3.png',
   },
   {
     id: `article4`,
@@ -151,6 +158,13 @@ export const articlesData = [
     img: 'article9.png',
   },
   {
+    id: `article3`,
+    title: `The Trip of a Lifetime`,
+    url: `https://www.marieclaire.com/health-fitness/a28266516/microdosing-psilocybin-anxiety/`,
+    date: `07/2019`,
+    img: 'article3.png',
+  },
+  {
     id: `article10`,
     title: `What Is 'Microdosing'? Tiny Hits of Psychedelic Drugs Reduce Anxiety`,
     url: `https://www.newsweek.com/microdosing-tiny-hits-psychedelic-drugs-reduce-anxiety-1058538`,
@@ -170,6 +184,9 @@ export const articlesData = [
     url: `https://www.utoronto.ca/news/rethinking-psychedlics-u-t-study-looks-practice-microdosing-ease-anxiety-and-sharpen-focus`,
     date: `07/2018`,
     img: 'article12.png',
+  },
+  {
+    id: `article13`,
   },
 ];
 

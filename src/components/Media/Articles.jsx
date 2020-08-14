@@ -3,24 +3,26 @@ import HomepageContext from '../../context/context';
 import ArticleImg from '../Image/ArticleImg';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
-import Carousel from 'react-bootstrap/Carousel';
 import { Container } from 'react-bootstrap';
 
 const Articles = () => {
   const { articles } = useContext(HomepageContext);
 
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const lastCardDeck = articles.slice(12, articles.length);
+  console.log(lastCardDeck.length);
 
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
+  // const [isDesktop, setIsDesktop] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
+
+  // useEffect(() => {
+  //   if (window.innerWidth > 769) {
+  //     setIsDesktop(true);
+  //     setIsMobile(false);
+  //   } else {
+  //     setIsMobile(true);
+  //     setIsDesktop(false);
+  //   }
+  // }, []);
 
   return (
     <section id="articles">
@@ -95,7 +97,7 @@ const Articles = () => {
             ))}
           </CardDeck>
           <CardDeck>
-            {articles.slice(12, articles.length).map((article) => (
+            {lastCardDeck.map((article) => (
               <Card key={article.id} style={{ border: 'transparent' }}>
                 <div>
                   <ArticleImg alt="article-preview" filename={article.img} />

@@ -40,21 +40,25 @@
   }
 
   .about-image-holder {
-    height: 60vh;
+    height: 70vh;
     padding-bottom: 2rem;
 
     .about-section-top-image {
       height: 100%;
       display: flex;
       justify-content: flex-end;
-      -webkit-clip-path: ellipse(50% 42% at 50% 42%);
-      clip-path: ellipse(50% 42% at 50% 42%);
+      -webkit-clip-path: ellipse(50% 48% at 50% 48%);
+      clip-path: ellipse(50% 48% at 50% 48%);
 
       @include respond(tab-port) {
         -webkit-clip-path: none;
         clip-path: none;
       }
     }
+
+    // @include respond(tab-port) {
+    //   height:
+    // }
 
     .photo-credit {
       display: flex;
