@@ -76,7 +76,6 @@ const CardsTop = () => {
                 >
                   <Card.Footer>
                     <a
-                      target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--cards-bottom"
                       href={url}
