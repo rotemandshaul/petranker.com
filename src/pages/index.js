@@ -11,10 +11,10 @@ export default () => {
   return (
     <>
       <Helmet>
-        <meta charSet="utf-8" />
         <title>{title}</title>
         <html lang={lang} />
         <meta name="description" content={description} />
+        <meta charSet="utf-8" />
       </Helmet>
       <Home />
     </>
