@@ -9,20 +9,6 @@ const Articles = () => {
   const { articles } = useContext(HomepageContext);
 
   const lastCardDeck = articles.slice(12, articles.length);
-  console.log(lastCardDeck.length);
-
-  // const [isDesktop, setIsDesktop] = useState(false);
-  // const [isMobile, setIsMobile] = useState(false);
-
-  // useEffect(() => {
-  //   if (window.innerWidth > 769) {
-  //     setIsDesktop(true);
-  //     setIsMobile(false);
-  //   } else {
-  //     setIsMobile(true);
-  //     setIsDesktop(false);
-  //   }
-  // }, []);
 
   return (
     <section id="articles">
