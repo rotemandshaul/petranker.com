@@ -24,7 +24,7 @@ const Footer = ({ siteTitle, menuLinks }) => (
       <div className="credits-holder">
         Designed by{' '}
         <a href="https://github.com/shaulitto" target="_blank">
-          born_dead
+          shaulitto
         </a>{' '}
         ©Rotem Petranker.All rights reserved <br /> Icons made by{' '}
         <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">

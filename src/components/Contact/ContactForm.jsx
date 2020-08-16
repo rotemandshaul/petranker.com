@@ -34,6 +34,9 @@ const ContactForm = () => {
     <>
       <section id="media-title">
         <h1>Contact Rotem</h1>
+        <a href="#form-section">
+          <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+        </a>
       </section>
       <section id="form-section">
         <Container>

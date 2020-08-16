@@ -5,7 +5,7 @@
 export const headData = {
   title: 'Rotem Petranker',
   lang: 'en',
-  description: `Rotem Petranker's website`,
+  description: `Rotem Petranker's website, Canadian Psychedelic research`,
 };
 
 // Menu Links
@@ -311,13 +311,6 @@ export const academiaData = {
     },
     {
       id: 'publication6',
-      title: 'PSYCHEDELICS AND THE NEED FOR TRANSPARENCY',
-      url: 'https://psyarxiv.com/vgt3r/',
-      year: '2020',
-      month: `May`,
-    },
-    {
-      id: 'publication7',
       title:
         'Social interaction context shapes emotion recognition through body language, not facial expressions',
       url: 'https://psycnet.apa.org/record/2020-02994-001',
@@ -325,7 +318,7 @@ export const academiaData = {
       month: `May`,
     },
     {
-      id: 'publication8',
+      id: 'publication7',
       title: 'Psychedelic microdosing benefits and challenges: an empirical codebook',
       url:
         'https://harmreductionjournal.biomedcentral.com/articles/10.1186/s12954-019-0308-4?optIn=true',
@@ -333,7 +326,7 @@ export const academiaData = {
       month: `July`,
     },
     {
-      id: 'publication9',
+      id: 'publication8',
       title:
         'Semantic and affective representations of valence: Prediction of autonomic and facial responses from feelings-focused and knowledge-focused self-reports',
       url: 'https://psycnet.apa.org/doiLanding?doi=10.1037%2Femo0000567',
@@ -341,7 +334,7 @@ export const academiaData = {
       month: `February`,
     },
     {
-      id: 'publication10',
+      id: 'publication9',
       title: 'Psychedelic Research and the Need for Transparency: Polishing Alice’s Looking Glass',
       url:
         'https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01681/full?fbclid=IwAR1PWW9VKcL5qEcKdQ8av1N-fTq8BrJpVs14ESYKslOviIbAN7jybAusz4k',

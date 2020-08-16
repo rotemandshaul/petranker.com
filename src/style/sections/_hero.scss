@@ -68,6 +68,9 @@
     @include respond(tab-port) {
       padding-top: 5rem;
     }
+    @include respond(phone-xs) {
+      width: 100%;
+    }
 
     .hero-image {
       @include respond(tab-port) {
@@ -76,6 +79,9 @@
       }
       @include respond(tab-land) {
         height: 100%;
+      }
+      @include respond(phone-xs) {
+        width: 100%;
       }
     }
   }

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import BackgroundImage from 'gatsby-background-image';
-// import { Container } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 const AcademiaHeroContent = ({ filename, alt, classname }) => (
   <StaticQuery
@@ -31,6 +31,17 @@ const AcademiaHeroContent = ({ filename, alt, classname }) => (
       if (!image) return null;
 
       const imageFluid = image.node.childImageSharp.fluid;
+
+      const [isMobile, setIsMobile] = useState(false);
+
+      useEffect(() => {
+        if (window.innerWidth > 769) {
+          setIsMobile(false);
+        } else {
+          setIsMobile(true);
+        }
+      }, []);
+
       return (
         <BackgroundImage alt={alt} fluid={imageFluid} className={classname}>
           <div className="hero-content">
@@ -38,32 +49,45 @@ const AcademiaHeroContent = ({ filename, alt, classname }) => (
               Rotem's
               <br /> Academic <br /> Background
             </h1>
-            <p>
-              Rotem graduated with a BsC in psychology from the University of Toronto and an MA in
-              social psychology from York University.
-            </p>
-            <p>
-              His master’s thesis modeled the contribution of affective regulation to the
-              relationship between mindfulness and sustained attention.
-            </p>
-            <p>
-              He is currently a clinical psychology PhD student at York University, working under
-              the tutelage of Dr. John Eastwood at the{' '}
-              <a
-                href="http://boredomlab.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ fontSize: '100%' }}
-              >
-                Boredom lab
-              </a>
-              .
-            </p>
-            <div className="btn-holder">
-              <a rel="noopener noreferrer" className="cta-btn cta-btn--cards" href="#publications">
-                Publications
-              </a>
-            </div>
+            <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
+              <p>
+                Rotem graduated with a BsC in psychology from the University of Toronto and an MA in
+                social psychology from York University.
+              </p>
+            </Fade>
+            <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
+              {' '}
+              <p>
+                His master’s thesis modeled the contribution of affective regulation to the
+                relationship between mindfulness and sustained attention.
+              </p>
+            </Fade>
+            <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
+              <p>
+                He is currently a clinical psychology PhD student at York University, working under
+                the tutelage of Dr. John Eastwood at the{' '}
+                <a
+                  href="http://boredomlab.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontSize: '100%' }}
+                >
+                  Boredom lab
+                </a>
+                .
+              </p>
+            </Fade>
+            <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
+              <div className="btn-holder">
+                <a
+                  rel="noopener noreferrer"
+                  className="cta-btn cta-btn--cards"
+                  href="#publications"
+                >
+                  Publications
+                </a>
+              </div>
+            </Fade>
           </div>
         </BackgroundImage>
       );

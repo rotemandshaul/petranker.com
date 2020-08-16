@@ -1,0 +1,38 @@
+#thanks {
+  height: 100vh;
+  padding: 0;
+
+  #thanks-title {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      align-items: center;
+    }
+
+    .container {
+      padding: 0;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: $big-font-size * 1.5;
+      font-weight: 700;
+      margin: 0;
+      padding-top: 5rem;
+      background-image: linear-gradient(#e0eafc, #cfdef3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      @include respond(tab-port) {
+        padding-top: 0;
+      }
+
+      @include respond(phone-xs) {
+        font-size: $big-font-size;
+      }
+    }
+  }
+}
