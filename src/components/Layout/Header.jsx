@@ -25,8 +25,13 @@ const Header = ({ siteTitle, menuLinks }) => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav as="ul" id="nav">
           {menuLinks.map((link) => (
-            <Nav.Item as="li">
-              <Link to={link.link} eventKey={link.name} activeStyle={{ borderBottom: 'solid 2px' }}>
+            <Nav.Item as="li" key={link.id}>
+              <Link
+                to={link.link}
+                key={link.id}
+                // eventkey={link.name}
+                activeStyle={{ borderBottom: 'solid 2px' }}
+              >
                 {link.name}
               </Link>
             </Nav.Item>

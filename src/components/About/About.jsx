@@ -21,7 +21,7 @@ const About = () => {
         <section id="media-title">
           <h1>About Rotem</h1>
           <a href="#about-top">
-            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+            <i className="fa fa-arrow-circle-down" aria-hidden="true"></i>
           </a>
         </section>
         <section id="about-top">
