@@ -5,7 +5,7 @@
 export const headData = {
   title: 'Rotem Petranker',
   lang: 'en',
-  description: `Rotem Petranker's website, Canadian Psychedelic research`,
+  description: `Rotem Petranker, Director, Canadian Centre for Psychedelic Science`,
 };
 
 // Menu Links
