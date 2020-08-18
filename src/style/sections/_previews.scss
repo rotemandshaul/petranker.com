@@ -48,7 +48,6 @@
 
     .video-info-title {
       position: absolute;
-      // padding-bottom: 2rem;
       padding-left: 15px;
       padding-right: 10px;
       color: white;
@@ -61,7 +60,8 @@
 
       @include respond(phone-xs) {
         font-size: 15px;
-        line-height: 2.5rem;
+        position: relative;
+        padding-bottom: 5rem;
       }
     }
 

@@ -62,7 +62,7 @@
     text-align: left;
 
     @include respond(phone-xs) {
-      padding-left: 2rem;
+      padding-left: 5rem;
     }
 
     a {
@@ -74,6 +74,14 @@
 
       &:hover {
         font-size: 150%;
+      }
+
+      @include respond(phone-xs) {
+        font-size: 16px;
+
+        &:hover {
+          font-size: 100%;
+        }
       }
     }
   }
@@ -88,9 +96,6 @@
       font-size: $small-font-size;
     }
   }
-}
-
-#articles {
 }
 
 #media-footer {
