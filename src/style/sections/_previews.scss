@@ -58,6 +58,11 @@
         font-size: $small-font-size;
         line-height: 2.5rem;
       }
+
+      @include respond(phone-xs) {
+        font-size: 15px;
+        line-height: 2.5rem;
+      }
     }
 
     .video-play-link {

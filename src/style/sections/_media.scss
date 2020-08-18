@@ -62,7 +62,7 @@
     text-align: left;
 
     @include respond(phone-xs) {
-      padding-left: 5rem;
+      padding-left: 2rem;
     }
 
     a {

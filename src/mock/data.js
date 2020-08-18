@@ -5,10 +5,10 @@
 export const headData = {
   title: 'Rotem Petranker',
   lang: 'en',
-  description: `Rotem Petranker, Director, Canadian Centre for Psychedelic Science`,
+  description: `Rotem Petranker | Director, Canadian Centre for Psychedelic Science`,
 };
 
-// Menu Links
+// MENUE LINKS
 export const menuLinks = [
   { name: 'Home', link: '/', id: 'link0' },
   { name: 'Academic Background', link: '/academia', id: 'link1' },
@@ -343,17 +343,3 @@ export const academiaData = {
     },
   ],
 };
-
-// {
-//   "items": [
-//     {
-//       "type": "video",
-//       "originalUrl": "https://vimeo.com/320862901",
-//       "url": "https://vimeo.com/320862901",
-//       "html": "<iframe class=\"embedly-embed\" src=\"//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fplayer.vimeo.com%2Fvideo%2F320862901%3Fapp_id%3D122963&dntp=1&url=https%3A%2F%2Fvimeo.com%2F320862901&image=https%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F763410222_1280.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=vimeo\" width=\"940\" height=\"394\" scrolling=\"no\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen=\"true\"></iframe>",
-//       "thumbnailUrl": "https://i.vimeocdn.com/video/763410222_1280.jpg",
-//       "width": 940,
-//       "height": 394
-//     }
-//   ]
-// }
