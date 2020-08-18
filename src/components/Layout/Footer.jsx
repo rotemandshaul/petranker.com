@@ -22,7 +22,7 @@ const Footer = ({ siteTitle, menuLinks }) => (
         </Nav>
       </Navbar>
       <div className="credits-holder">
-        This <i class="fas fa-trademark">React</i> web-app was developed and designed by{' '}
+        Web-app developed by{' '}
         <a href="https://github.com/shaulitto" title="shaulitto" target="_blank">
           shaulitto
         </a>{' '}
