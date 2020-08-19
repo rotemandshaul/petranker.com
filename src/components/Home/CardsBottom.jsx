@@ -28,7 +28,7 @@ const CardsTop = () => {
 
   return (
     <section id="cards-section-bottom">
-      <Title title="Collaboration" />
+      <Title title="Collaborations" />
       <Container>
         <CardGroup>
           {cards.slice(3, 6).map((card) => {

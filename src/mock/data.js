@@ -26,7 +26,7 @@ export const heroData = {
   line1: `Director, Canadian Centre for Psychedelic Science`,
   line2: `Associate Director, Psychedelic Studies Research Program`,
   line3: `PhD Student, Clinical Psychology, Boredom Lab, York University`,
-  cta: `My Work`,
+  cta: `Initiatives`,
 };
 
 // HOME PAGE CARDS DATA
@@ -44,7 +44,7 @@ export const cardsData = [
     id: 'ccps-card',
     logo: 'tcps_logo.png',
     title: 'Canadian Centre for Psychedelic Science',
-    text: `Rotem co founded the Canadian Centre for Psychedelic Science in 2019, with the aim of offering transparent and rigorous consulting services.`,
+    text: `Rotem co-founded the Canadian Centre for Psychedelic Science in 2019, with the aim of offering transparent and rigorous consulting services.`,
     btntext: 'CCPS',
     url: 'https://www.psychedelicscience.ca/',
     fade: 'bottom',
@@ -53,7 +53,7 @@ export const cardsData = [
     id: 'psrp-card',
     logo: 'uvt_logo.png',
     title: 'Psychedelic Studies Research Program',
-    text: `Rotem co-created the Psychedelic Studies Research Program with Dr. Norman Farb and Thomas Anderson, creating a psychedelics research hub.`,
+    text: `Rotem co-founded the Psychedelic Studies Research Program with Dr. Norman Farb and Thomas Anderson, creating a psychedelics research hub.`,
     btntext: 'PSRP',
     url:
       'https://www.utm.utoronto.ca/psychedelics/welcome-psychedelic-studies-research-program-utm',

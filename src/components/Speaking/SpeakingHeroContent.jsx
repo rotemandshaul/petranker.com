@@ -56,15 +56,8 @@ const AcademiaHeroContent = ({ filename, alt, classname }) => (
             </Fade>
             <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
               <p>
-                His experience includes giving talks online, to classes, businesses, and at
-                conferences.
-              </p>
-            </Fade>
-
-            <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
-              <p>
-                His experience includes giving talks online, to classes, businesses, and at
-                conferences.
+                His experience includes giving talks online and in person to classes, businesses,
+                and at conferences.
               </p>
             </Fade>
             <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">

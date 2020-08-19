@@ -40,7 +40,10 @@ const About = () => {
               <div className="about-text-holder">
                 <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
                   {' '}
-                  <p>Rotem was born in Haifa, Israel, and emigrated to Toronto at the age of 24.</p>
+                  <p>
+                    Rotem (Roe-tem) was born in Haifa, Israel, and emigrated to Toronto at the age
+                    of 24.
+                  </p>
                 </Fade>
                 <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
                   <p>
