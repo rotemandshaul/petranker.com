@@ -74,7 +74,7 @@ const ContactForm = () => {
                   className="email-input"
                   type="email"
                   name="email"
-                  placeHolder="Email*"
+                  placeHolder="Email"
                   onChange={handleChange}
                 />
               </label>
