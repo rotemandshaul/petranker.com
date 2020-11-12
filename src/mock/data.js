@@ -3,9 +3,9 @@
 
 // HEAD DATA
 export const headData = {
-  title: 'Rotem Petranker - Psychedelics Researcher',
+  title: 'Rotem Petranker | Psychedelics Researcher',
   lang: 'en',
-  description: `Rotem Petranker is a psychedelic-research trailblazer, founder and director of the Canadian Centre for Psychedelic Science.`,
+  description: `Rotem Petranker, is a scientist-clinician, public speaker, scientific consultant, and the director of the Canadian Centre for Psychedelic Science.`,
 };
 
 // MENUE LINKS
@@ -24,7 +24,7 @@ export const heroData = {
   img: 'headshot.png',
   title: 'Rotem Petranker',
   line1: `Director, Canadian Centre for Psychedelic Science.`,
-  line2: `Associate Director, Psychedelic Studies Research Program.`,
+  line2: `Associate Director, Psychedelic Studies Research Program at the University of Toronto.`,
   line3: `PhD Student, Clinical Psychology, Boredom Lab, York University.`,
   cta: `Initiatives`,
 };

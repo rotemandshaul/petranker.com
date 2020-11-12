@@ -19,7 +19,7 @@ const Header = ({ siteTitle, menuLinks }) => {
   return (
     <Navbar expand="md" sticky="top" className={`navbar-${borderBottomStyle}`}>
       <Navbar.Brand id="nav-brand" href="/">
-        {siteTitle}
+        {'Rotem Petranker'}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">

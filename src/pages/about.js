@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 export default () => {
-  const { lang, description } = headData;
+  const { lang } = headData;
 
   return (
     <>
@@ -14,7 +14,10 @@ export default () => {
         <meta charSet="utf-8" />
         <title>About Rotem</title>
         <html lang={lang} />
-        <meta name="description" content={description} />
+        <meta
+          name="description"
+          content="Rotem Petranker | Psychedelic research - About Rotem Petranker"
+        />
       </Helmet>
       <About />
     </>

@@ -1,4 +1,11 @@
 #form-section {
+  .contact-info {
+    margin-bottom: 5rem;
+    color: lightgray;
+    font-weight: bold;
+    opacity: 1;
+  }
+
   form {
     display: flex;
     flex-direction: column;

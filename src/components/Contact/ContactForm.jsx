@@ -33,13 +33,18 @@ const ContactForm = () => {
   return (
     <>
       <section id="media-title">
-        <h1>Contact Rotem</h1>
+        {/* <h1>"Fear is the mind-killer."</h1> */}
         <a href="#form-section">
-          <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+          {/* <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> */}
         </a>
       </section>
       <section id="form-section">
         <Container>
+          <p className="contact-info">
+            You can contact Rotem via email at{' '}
+            <a href="mailto:rotem@boredomlab.org">rotem@boredomlab.org</a> or you can fill out the
+            form below.
+          </p>
           <form
             name="contact"
             method="post"
@@ -62,7 +67,7 @@ const ContactForm = () => {
                   className="name-input"
                   type="text"
                   name="name"
-                  placeHolder="Name*"
+                  placeHolder="Name"
                   onChange={handleChange}
                 />
               </label>
@@ -85,7 +90,7 @@ const ContactForm = () => {
                 <textarea
                   className="message-input"
                   name="message"
-                  placeHolder="Message*"
+                  placeHolder="Message"
                   onChange={handleChange}
                 />
               </label>

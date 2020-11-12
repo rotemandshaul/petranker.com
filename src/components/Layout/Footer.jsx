@@ -9,7 +9,7 @@ const Footer = ({ siteTitle, menuLinks }) => (
     <Container>
       <Navbar expand="lg" className="footer-links">
         <Navbar.Brand id="nav-brand" className="footer-brand" href="/">
-          {siteTitle}
+          Rotem Petranker
         </Navbar.Brand>
         <Nav as="ul" id="nav">
           {menuLinks.map((link) => (

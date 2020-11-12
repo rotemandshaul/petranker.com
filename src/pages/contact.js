@@ -8,7 +8,10 @@ import '../style/main.scss';
 const Contact = () => (
   <>
     <Helmet>
+      <meta charSet="utf-8" />
       <title>Contact</title>
+      <html lang="en" />
+      <meta name="description" content="Rotem Petranker | Psychedelic research - Contact" />
     </Helmet>
     <Layout>
       <ContactForm />
