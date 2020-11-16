@@ -12,11 +12,11 @@ export default () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>About Rotem</title>
+        <title>Read More About Rotem Petranker</title>
         <html lang={lang} />
         <meta
           name="description"
-          content="Rotem Petranker | Psychedelic research - About Rotem Petranker"
+          content="Rotem Petranker, an international expert and ground breaking researcher in the field of psychedelics. Read more about his story and perspective."
         />
       </Helmet>
       <About />

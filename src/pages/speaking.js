@@ -12,11 +12,11 @@ export default () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Speaking</title>
+        <title>Request Rotem To Speak About His Research</title>
         <html lang="en" />
         <meta
           name="description"
-          content="Rotem Petranker | Psychedelic research - Public speaking"
+          content="Rotem Petranker has vast experience speaking about his research, get in touch to invite Rotem to talk. "
         />
       </Helmet>
       <Speaking />

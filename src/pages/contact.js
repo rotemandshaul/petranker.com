@@ -9,9 +9,12 @@ const Contact = () => (
   <>
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Contact</title>
+      <title>Rotem Petranker | Psychedelics Researcher - Contact</title>
       <html lang="en" />
-      <meta name="description" content="Rotem Petranker | Psychedelic research - Contact" />
+      <meta
+        name="description"
+        content="Want to know more about Rotem Petranker's work, or simply talk science? Reach out!"
+      />
     </Helmet>
     <Layout>
       <ContactForm />
