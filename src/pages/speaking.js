@@ -7,17 +7,15 @@ import '../style/main.scss';
 
 export default () => {
   const { lang } = headData;
+  const { title, description } = headData.speaking;
 
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Request Rotem To Speak About His Research</title>
-        <html lang="en" />
-        <meta
-          name="description"
-          content="Rotem Petranker has vast experience speaking about his research, get in touch to invite Rotem to talk. "
-        />
+        <title>{title}</title>
+        <html lang={lang} />
+        <meta name="description" content={description} />
       </Helmet>
       <Speaking />
     </>

@@ -7,16 +7,15 @@ import '../style/main.scss';
 
 export default () => {
   const { lang } = headData;
+  const { title, description } = headData.media;
+
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Rotem Petranker in the Media</title>
-        <html lang="en" />
-        <meta
-          name="description"
-          content="Experience Rotem Petranker's videos, podcast and radio interviews, and fascinating articles."
-        />
+        <title>{title}</title>
+        <html lang={lang} />
+        <meta name="description" content={description} />
       </Helmet>
       <Media />
     </>

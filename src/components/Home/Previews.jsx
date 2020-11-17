@@ -114,7 +114,7 @@ const Previews = () => {
                         <Card.Body className="carousel-card-body">
                           <Card.Title>
                             <a href={article.url} target="_blank">
-                              {article.title}
+                              {article.title.toUpperCase()}
                             </a>
                           </Card.Title>
                           <br />
@@ -133,7 +133,7 @@ const Previews = () => {
                         <Card.Body className="carousel-card-body">
                           <Card.Title>
                             <a href={article.url} target="_blank">
-                              {article.title}
+                              {article.title.toUpperCase()}
                             </a>
                           </Card.Title>
                         </Card.Body>
@@ -151,7 +151,7 @@ const Previews = () => {
                         <Card.Body className="carousel-card-body">
                           <Card.Title>
                             <a href={article.url} target="_blank">
-                              {article.title}
+                              {article.title.toUpperCase()}
                             </a>
                           </Card.Title>
                         </Card.Body>
@@ -169,7 +169,7 @@ const Previews = () => {
                         <Card.Body className="carousel-card-body">
                           <Card.Title>
                             <a href={article.url} target="_blank">
-                              {article.title}
+                              {article.title.toUpperCase()}
                             </a>
                           </Card.Title>
                         </Card.Body>

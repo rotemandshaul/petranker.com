@@ -7,17 +7,15 @@ import '../style/main.scss';
 
 export default () => {
   const { lang } = headData;
+  const { title, description } = headData.consulting;
 
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Corporate Consulting From Rotem Petranker</title>
+        <title>{title}</title>
         <html lang={lang} />
-        <meta
-          name="description"
-          content="Industry leading consultant to the most cutting edge development in the field of psychedelics for a better world. "
-        />
+        <meta name="description" content={description} />
       </Helmet>
       <Consulting />
     </>

@@ -1,11 +1,51 @@
-#form-section {
+.contact-hero-holder {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+  padding-bottom: 5rem;
+
   .contact-info {
     margin-bottom: 5rem;
-    color: lightgray;
-    font-weight: bold;
-    opacity: 1;
+    padding-right: 10rem;
+    padding-top: 25%;
+    background-image: linear-gradient(135deg, $primary-color, $secondary-color);
+    font-size: $mid-font-size;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      font-size: $mid-font-size;
+      padding: 0;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      font-size: 16px;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+
+    a {
+      font-size: 80%;
+    }
   }
 
+  @include respond(tab-port) {
+    flex-direction: column;
+    text-align: center;
+    font-size: $mid-font-size;
+    padding-top: 0;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+
+#form-section {
   form {
     display: flex;
     flex-direction: column;

@@ -3,9 +3,41 @@
 
 // HEAD DATA
 export const headData = {
-  title: 'Rotem Petranker | Psychedelics Researcher',
   lang: 'en',
-  description: `Rotem Petranker, is a scientist-clinician, public speaker, scientific consultant, and the director of the Canadian Centre for Psychedelic Science.`,
+  index: {
+    title: 'Rotem Petranker | Psychedelics Researcher',
+    description: `Rotem Petranker, is a scientist-clinician, public speaker, scientific consultant, and the director of the Canadian Centre for Psychedelic Science.`,
+  },
+  academia: {
+    title: 'Rotem Petranker | Psychedelic Scholar - Academic Publications',
+    description:
+      "Read all of Rotem Petranker's academic publications for free and get informed about cutting edge psychedelic research.",
+  },
+  speaking: {
+    title: 'Ask Rotem To Speak About Psychedelic Science',
+    description:
+      'Rotem Petranker has vast experience explaining psychedelics, click to see if Rotem is available to give a talk.',
+  },
+  consulting: {
+    title: 'Corporate Consulting From Rotem Petranker',
+    description:
+      'Industry leading consultant producing bleeding edge psychedelic developments for a better scientific world.',
+  },
+  media: {
+    title: 'Rotem Petranker in the Media',
+    description:
+      "Experience Rotem Petranker's videos, podcast and radio interviews, and fascinating articles.",
+  },
+  about: {
+    title: 'Read More About Rotem Petranker',
+    description:
+      'Rotem Petranker, a leading expert and groundbreaking psychedelics researcher. Read more about his story and perspective.',
+  },
+  contact: {
+    title: 'Rotem Petranker | Psychedelics Researcher - Contact',
+    description:
+      "Want to know more about Rotem Petranker's work, or simply talk science? Reach out!",
+  },
 };
 
 // MENUE LINKS
@@ -15,7 +47,7 @@ export const menuLinks = [
   { name: 'Speaking', link: '/speaking', id: 'link2' },
   { name: 'Consulting', link: '/consulting', id: 'link3' },
   { name: 'Media', link: '/media', id: 'link4' },
-  { name: 'About Rotem', link: '/about', id: 'link5' },
+  { name: 'About Rotem', link: '/about-rotem', id: 'link5' },
   { name: 'Contact', link: '/contact', id: 'link6' },
 ];
 

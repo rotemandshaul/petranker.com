@@ -1,6 +1,7 @@
 import React from 'react';
 import { navigate } from 'gatsby-link';
 import { Container } from 'react-bootstrap';
+import HeroImg from '../Image/HeroImg';
 
 function encode(data) {
   return Object.keys(data)
@@ -33,18 +34,25 @@ const ContactForm = () => {
   return (
     <>
       <section id="media-title">
-        {/* <h1>"Fear is the mind-killer."</h1> */}
-        <a href="#form-section">
-          {/* <i class="fa fa-arrow-circle-down" aria-hidden="true"></i> */}
-        </a>
+        <Container className="contact-hero-holder">
+          <div className="hero-text-wrapper">
+            <p className="contact-info">
+              You can contact Rotem via email at{' '}
+              <a href="mailto:rotem@boredomlab.org">rotem@boredomlab.org</a> or you can fill out the
+              form below.
+            </p>
+          </div>
+          <div className="hero-image-holder">
+            <HeroImg
+              alt="contact_headshot"
+              filename="contact_headshot.png"
+              classname="hero-image"
+            />
+          </div>
+        </Container>
       </section>
       <section id="form-section">
         <Container>
-          <p className="contact-info">
-            You can contact Rotem via email at{' '}
-            <a href="mailto:rotem@boredomlab.org">rotem@boredomlab.org</a> or you can fill out the
-            form below.
-          </p>
           <form
             name="contact"
             method="post"

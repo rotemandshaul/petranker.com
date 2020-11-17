@@ -7,17 +7,15 @@ import '../style/main.scss';
 
 export default () => {
   const { lang } = headData;
+  const { title, description } = headData.academia;
 
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Rotem Petranker | Psychedelic Scholar - Academic Publications</title>
+        <title>{title}</title>
         <html lang={lang} />
-        <meta
-          name="description"
-          content="Read all of Rotem Petranker's academic publications and get informed about cutting edge research in the field of psychedelics."
-        />
+        <meta name="description" content={description} />
       </Helmet>
       <Academia />
     </>
