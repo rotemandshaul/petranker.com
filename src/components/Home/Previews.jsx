@@ -48,7 +48,7 @@ const Previews = () => {
               ))}
             </div>
             <div className="media-video-collection">
-              {videos.slice(1, videos.length).map((video) => (
+              {videos.slice(1, 5).map((video) => (
                 <VideoImg
                   alt={`${video.id}-thumbnail`}
                   key={video.id}

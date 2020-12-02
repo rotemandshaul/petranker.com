@@ -25,7 +25,7 @@ function Media() {
         <section id="media-title">
           <h1>Here are all of Rotem's media appearences</h1>
           <a href="#media-preview-section-video">
-            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+            <i className="fa fa-arrow-circle-down" aria-hidden="true"></i>
           </a>
         </section>
         <Videos />
@@ -33,7 +33,7 @@ function Media() {
         <Articles />
         <section id="media-footer">
           <a href="#media-title">
-            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            <i className="fa fa-arrow-circle-up" aria-hidden="true"></i>
           </a>
         </section>
       </Layout>

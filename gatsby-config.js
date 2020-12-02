@@ -18,7 +18,7 @@ module.exports = {
         name: `petranker.com`,
         short_name: `petranker`,
         start_url: `/`,
-        background_color: `##e0eafc`,
+        background_color: `#e0eafc`,
         theme_color: `#004e92`,
         display: `standalone`,
         icon: `src/images/favicon.png`,

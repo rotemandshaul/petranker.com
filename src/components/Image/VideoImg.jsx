@@ -12,7 +12,7 @@ function VerticallyCenteredModal(props) {
       <iframe
         src={props.src}
         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen="true"
+        allowFullScreen={true}
         width="940"
         height="528"
         scrolling="no"
