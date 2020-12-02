@@ -22,11 +22,10 @@ const Podcasts = () => {
 
   return (
     <section id="podcasts">
-      <Container>
-        <div className="media-pod-holder">
           <div id="media-header">
             <h1>Podcasts & Radio</h1>
           </div>
+      <Container>
           <div className="media-pod-list">
             {podcasts.map((podcast) => (
               <Media key={podcast.id} className="media-pod-item">
@@ -53,7 +52,6 @@ const Podcasts = () => {
               More Media
             </a>
           </div>
-        </div>
       </Container>
     </section>
   );
