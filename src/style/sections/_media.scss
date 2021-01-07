@@ -42,7 +42,7 @@
   }
 }
 
-#media-preview-section-video {
+#media-video {
   @extend #media-preview-section;
   padding-top: 5rem;
 
@@ -50,9 +50,9 @@
     font-size: $small-font-size;
   }
 
-  .media-video-holder {
-    padding-bottom: 5rem;
-  }
+  // .media-video-collection-secondary {
+  //   @extend #media-preview-section;
+  // }
 }
 
 #podcasts {

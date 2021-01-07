@@ -20,9 +20,8 @@ const Videos = () => {
   }, []);
 
   return (
-    <section id="media-preview-section-video">
+    <section id="media-video">
       <Container>
-        <div className="media-video">
           <div id="media-header">
             <h1>Videos</h1>
           </div>
@@ -40,7 +39,7 @@ const Videos = () => {
               ))}
             </div>
             <div className="media-video-collection">
-              {videos.slice(1, videos.length).map((video) => (
+              {videos.slice(1, 5).map((video) => (
                 <VideoImg
                   alt={`${video.id}-thumbnail`}
                   key={video.id}
@@ -51,13 +50,26 @@ const Videos = () => {
                 />
               ))}
             </div>
-          </div>
+          </div>    
+          <div className="media-video-holder">
+            <div className="media-video-collection">
+              {videos.slice(5, videos.length).map((video) => (
+                <VideoImg
+                  alt={`${video.id}-thumbnail`}
+                  key={video.id}
+                  title={video.title}
+                  filename={video.img}
+                  src={video.iframe}
+                  classname="media-video-item-small"
+                />
+              ))}
+            </div>
+          </div>    
           <div className="video-button-holder">
             <a className="cta-btn cta-btn--hero" href="#podcasts">
               More Media
             </a>{' '}
           </div>
-        </div>
       </Container>
     </section>
   );

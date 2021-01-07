@@ -120,6 +120,13 @@ export const cardsData = [
 // ARTICLES
 export const articlesData = [
   {
+    id: `article-2`,
+    title: `People who microdose psychedelic drugs report that the benefits greatly outweigh the drawbacks`,
+    url: `https://www.psypost.org/2020/10/people-who-microdose-psychedelic-drugs-report-that-the-benefits-greatly-outweigh-the-drawbacks-58328`,
+    date: `10/2020`,
+    img: 'article-2.png',
+  },
+  {
     id: `article-1`,
     title: `MEET THE WOMAN WHO WANTS TO SELL PSYCHEDELIC DRUGS TO SCIENTISTS`,
     url: `https://futurism.com/neoscope/woman-sell-psychedelic-drugs-scientists`,
@@ -217,9 +224,6 @@ export const articlesData = [
     date: `07/2018`,
     img: 'article12.png',
   },
-  {
-    id: `article13`,
-  },
 ];
 
 // PODCASTS
@@ -282,15 +286,15 @@ export const videosData = [
     title: `The State of Psychedelic Research - Rotem Petranker`,
     date: `10/2019`,
     img: `video3_thumbnail.png`,
-    iframe: 'https://www.youtube.com/embed/TreFjlKCdj8',
+    iframe: 'https://www.youtube.com/embed/g0_172eVxBc',
   },
-  // {
-  //   id: `video4`,
-  //   title: `Could Canada decriminalize magic mushrooms? `,
-  //   date: `05/2019`,
-  //   img: `video4_thumbnail.png`,
-  //   iframe: "https://www.citynews1130.com/video/iframe/593482582001/SyxzIeNcgb/6035356169001",
-  // },
+  {
+    id: `video4`,
+    title: `Microdosing Psychedelics: Characteristics and Correlates (Petranker)`,
+    date: `09/2019`,
+    img: `video4_thumbnail.png`,
+    iframe: "https://www.citynews1130.com/video/iframe/593482582001/SyxzIeNcgb/6035356169001",
+  },
   {
     id: `videos5`,
     title: `Rotem Petranker and Thomas Anderson report their microdosing findings`,
