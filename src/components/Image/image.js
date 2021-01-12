@@ -3,7 +3,7 @@
 // import Img from 'gatsby-image';
 
 // const Image = () => {
-//   const data = useStaticQuery(graphql`
+//   const data = y(graphql`
 //     query {
 //       placeholderImage: file(relativePath: { eq: "headshot.png" }) {
 //         childImageSharp {
