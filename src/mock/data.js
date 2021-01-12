@@ -29,7 +29,7 @@ export const headData = {
       "Experience Rotem Petranker's videos, podcast and radio interviews, and fascinating articles.",
   },
   about: {
-    title: 'Read More About Rotem Petranker',
+    title: 'Read About Rotem Petranker',
     description:
       'Rotem Petranker, a leading expert and groundbreaking psychedelics researcher. Read more about his story and perspective.',
   },
