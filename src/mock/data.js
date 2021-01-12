@@ -59,8 +59,7 @@ export const heroData = {
   line2: `Associate Director, Psychedelic Studies Research Program at the University of Toronto.`,
   line3: `PhD Student, Clinical Psychology, Boredom Lab, York University.`,
   cta: `Initiatives`,
-};
-
+}
 // HOME PAGE CARDS DATA
 export const cardsData = [
   {
@@ -390,6 +389,30 @@ export const academiaData = {
         'https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01681/full?fbclid=IwAR1PWW9VKcL5qEcKdQ8av1N-fTq8BrJpVs14ESYKslOviIbAN7jybAusz4k',
       year: '2020',
       month: `July`,
+    },
+    {
+      id: 'publication10',
+      title: 'Microdosing psychedelics: Demographics, practices, and psychiatric comorbidities',
+      url:
+        'https://journals.sagepub.com/doi/abs/10.1177/0269881120908004',
+      year: '2020',
+      month: `February`,
+    },
+    {
+      id: 'publication11',
+      title: 'The metronome response task for measuring mind wandering: Replication attempt and extension of three studies by Seli et al',
+      url:
+        'https://link.springer.com/article/10.3758/s13414-020-02131-x',
+      year: '2020',
+      month: `September`,
+    },
+    {
+      id: 'publication12',
+      title: `Microdosing psychedelics: Subjective benefits and challenges, substance testing behavior, and the relevance of intention`,
+      url:
+        'https://journals.sagepub.com/doi/abs/10.1177/0269881120953994',
+      year: '2020',
+      month: `October`,
     },
   ],
 };
