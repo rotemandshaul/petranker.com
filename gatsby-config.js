@@ -5,6 +5,14 @@ require("dotenv").config({
 module.exports = {
   pathPrefix: '/petranker.com',
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: `process.env.GA_TRACKING_ID`,
+        head: true,
+      },
+  },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -14,13 +22,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: `process.env.GA_TRACKING_ID`,
       },
     },
     {
