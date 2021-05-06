@@ -26,10 +26,11 @@
     @include respond(tab-port) {
       font-size: $default-font-size;
     }
-    a {
-      color: yellow;
-      font-size: 100%;
-    }
+  }
+
+  .bolder {
+    // font-weight: bolder;
+    color: yellow;
   }
 
   .consulting-banner {

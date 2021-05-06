@@ -21,21 +21,12 @@ const Consulting = () => {
             <div className="consulting-text-box">
               <h1 className="consulting-text-header">Consulting</h1>
               <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
-                <p>
-                  Rotem is currently consulting exclusively with{' '}
-                  <a href="https://www.cybin.com/" target="_blank">
-                    Cybin Corp
-                  </a>
-                  , <br />a leading force in the psychedelic space.
-                </p>
+                {' '}
+                <p>Rotem may be able to help you make your business more science-based.</p>
               </Fade>
               <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
                 {' '}
-                <p>He may be able to help you make your business more science-based, however.</p>
-              </Fade>
-              <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
-                {' '}
-                <p>Get in touch to find out.</p>
+                <p className="bolder">Get in touch to find out:</p>
               </Fade>
               <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
                 <div className="btn-holder">
@@ -55,8 +46,8 @@ const Consulting = () => {
               <div className="consulting-partner-link">
                 <a href="https://www.cybin.com/" target="_blank" rel="noopener noreferrer">
                   <ConsultingImg
-                    alt="Cybin_logo"
-                    filename="cybin_logo.png"
+                    alt="consulting_image"
+                    filename="private_consulting.png"
                     classname="partner-logo"
                   />
                 </a>

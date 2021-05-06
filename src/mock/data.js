@@ -95,7 +95,7 @@ export const cardsData = [
     logo: 'consulting.png',
     title: 'Consulting',
     text: `Rotem is a foremost global expert on the science of microdosing psychedelics and can make your business model science-based.`,
-    btntext: 'Current Partners',
+    btntext: 'Become Partners',
     url: '/consulting',
   },
   {
