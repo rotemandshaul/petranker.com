@@ -5,7 +5,7 @@ import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
-export default () => {
+const Mediapage = () => {
   const { lang } = headData;
   const { title, description } = headData.media;
 
@@ -20,4 +20,5 @@ export default () => {
       <Media />
     </>
   );
-};
+}
+export default Mediapage;

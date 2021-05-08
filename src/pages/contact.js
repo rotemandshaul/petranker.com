@@ -6,7 +6,7 @@ import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
-const Contact = () => (
+const Contactpage = () => (
   <>
     <Helmet>
       <meta charSet="utf-8" />
@@ -20,4 +20,4 @@ const Contact = () => (
   </>
 );
 
-export default Contact;
+export default Contactpage;

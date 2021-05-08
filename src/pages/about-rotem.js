@@ -5,7 +5,7 @@ import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
-export default () => {
+const Aboutpage = () => {
   const { lang } = headData;
   const { title, description } = headData.about;
 
@@ -20,4 +20,5 @@ export default () => {
       <About />
     </>
   );
-};
+}
+export default Aboutpage;
