@@ -32,7 +32,7 @@ const CardsTop = () => {
       <Container>
         <CardGroup>
           {cards.slice(3, 6).map((card) => {
-            const { id, logo, title, text, btntext, url, fade } = card;
+            const { id, logo, title, text, btntext, url } = card;
             return (
               <Card
                 key={id}
@@ -47,7 +47,7 @@ const CardsTop = () => {
                   delay={500}
                   distance="30px"
                 >
-                  <CardsImg alt={`${id}logo`} filename={logo} classname="card-image-bottom" />
+                  <CardsImg alt={`${id}logo | https://www.flaticon.com/authors/eucalyp`} filename={logo} classname="card-image-bottom" />
                 </Fade>
                 <Fade
                   left={isDesktop}

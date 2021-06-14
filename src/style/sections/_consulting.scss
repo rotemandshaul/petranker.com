@@ -41,11 +41,12 @@
     clip-path: circle(99.8% at 0 50%);
     -webkit-clip-path: circle(99.5% at 0 50%);
 
-    @include respond(tab-port) {
-      clip-path: circle(120% at 50% 0);
-      -webkit-clip-path: circle(120% at 50% 0);
+    @include respond(phone) {
+      // clip-path: circle(120% at 50% 0);
+      // -webkit-clip-path: circle(120% at 50% 0);
+      clip-path: circle(72.2% at 50% 7%);
+      -webkit-clip-path: circle(72.2% at 50% 7%);
       height: auto;
-      padding-bottom: 6rem;
     }
   }
 
@@ -58,7 +59,7 @@
     padding-right: 30%;
     padding-left: 10%;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       padding: 1rem;
       height: 100%;
     }
@@ -68,13 +69,21 @@
         font-size: 3rem;
         border-width: 0.5rem;
       }
-      @include respond(tab-port) {
-        padding: 5rem 0;
+      @include respond(phone) {
+        // padding: 5rem 0rem 10rem 0rem;
+        padding-bottom: 15rem;
+        margin-bottom: 10rem;
         a {
           font-size: 2rem;
           border-width: 0.5rem;
         }
       }
+    }
+  }
+
+  .bolder {
+    @include respond(phone) {
+      padding-bottom: 5rem;
     }
   }
 
@@ -86,7 +95,6 @@
     justify-content: center;
 
     @include respond(tab-port) {
-      padding-top: 25%;
       padding-bottom: 15rem;
     }
   }

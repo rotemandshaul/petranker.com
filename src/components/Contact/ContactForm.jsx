@@ -75,7 +75,8 @@ const ContactForm = () => {
                   className="name-input"
                   type="text"
                   name="name"
-                  placeHolder="Name"
+                  required
+                  placeHolder="Your Name*"
                   onChange={handleChange}
                 />
               </label>
@@ -87,7 +88,8 @@ const ContactForm = () => {
                   className="email-input"
                   type="email"
                   name="email"
-                  placeHolder="Email"
+                  required
+                  placeHolder="Your Email Address*"
                   onChange={handleChange}
                 />
               </label>
@@ -98,7 +100,8 @@ const ContactForm = () => {
                 <textarea
                   className="message-input"
                   name="message"
-                  placeHolder="Message"
+                  required
+                  placeHolder="Your Message for Rotem*"
                   onChange={handleChange}
                 />
               </label>

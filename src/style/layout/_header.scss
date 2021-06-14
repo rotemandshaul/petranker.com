@@ -15,6 +15,10 @@
   background-color: white;
 }
 
+.navbar-brand {
+  font-size: $small-font-size;
+}
+
 .nav-item {
   padding: 1rem;
 }
@@ -25,9 +29,11 @@
   }
 }
 
-#nav {
-  float: right;
+#responsive-navbar-nav {
+  justify-content: flex-end;
+}
 
+#nav {
   @include respond(tab-port) {
     float: none;
   }

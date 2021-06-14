@@ -32,7 +32,7 @@ const AboutHero = ({ filename, alt, classname }) => (
       const imageFluid = image.node.childImageSharp.fluid;
       return (
         <BackgroundImage
-          alt={alt}
+          alt={ `${alt} credit: Ammar Ijaz`}
           fluid={imageFluid}
           className={classname}
           style={{ color: 'white' }}

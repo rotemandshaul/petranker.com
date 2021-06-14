@@ -48,7 +48,7 @@ const CardsTop = () => {
                   distance="30px"
                 >
                   <div className="cards-image-wrapper">
-                    <CardsImg alt={`${id} logo`} filename={logo} classname="card-image" />
+                    <CardsImg alt={`${id} logo| Designed By 588ku "https://pngtree.com" | UofT logo credit: https://utorontopress.com/us/about-utp`} filename={logo} classname="card-image" />
                   </div>
                 </Fade>
                 <Fade
