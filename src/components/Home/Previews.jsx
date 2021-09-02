@@ -1,30 +1,17 @@
-import React, { useContext, useState, useEffect } from 'react';
-import HomepageContext from '../../context/context';
-import Title from './Title';
-import VideoImg from '../Image/VideoImg';
-import PodImg from '../Image/PodImg';
-import ArticleImg from '../Image/ArticleImg';
+import React, { useContext } from 'react';
 import Media from 'react-bootstrap/Media';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Carousel from 'react-bootstrap/Carousel';
 import { Container } from 'react-bootstrap';
+import HomepageContext from '../../context/context';
+import Title from './Title';
+import VideoImg from '../Image/VideoImg';
+import PodImg from '../Image/PodImg';
+import ArticleImg from '../Image/ArticleImg';
 
 const Previews = () => {
   const { articles, podcasts, videos } = useContext(HomepageContext);
-
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
 
   return (
     <section id="media-preview-section">
@@ -83,7 +70,7 @@ const Previews = () => {
                   />
                   <Media.Body className="media-pod-item-body">
                     <h5 className="media-pod-item-title">
-                      <a href={podcast.url} target="_blank">
+                      <a href={podcast.url} target="_blank" rel="noreferrer">
                         {podcast.title}
                       </a>
                     </h5>
@@ -113,7 +100,7 @@ const Previews = () => {
                         </div>
                         <Card.Body className="carousel-card-body">
                           <Card.Title>
-                            <a href={article.url} target="_blank">
+                            <a href={article.url} target="_blank" rel="noreferrer">
                               {article.title.toUpperCase()}
                             </a>
                           </Card.Title>
@@ -132,7 +119,7 @@ const Previews = () => {
                         </div>
                         <Card.Body className="carousel-card-body">
                           <Card.Title>
-                            <a href={article.url} target="_blank">
+                            <a href={article.url} target="_blank" rel="noreferrer">
                               {article.title.toUpperCase()}
                             </a>
                           </Card.Title>
@@ -150,7 +137,7 @@ const Previews = () => {
                         </div>
                         <Card.Body className="carousel-card-body">
                           <Card.Title>
-                            <a href={article.url} target="_blank">
+                            <a href={article.url} target="_blank" rel="noreferrer">
                               {article.title.toUpperCase()}
                             </a>
                           </Card.Title>
@@ -168,7 +155,7 @@ const Previews = () => {
                         </div>
                         <Card.Body className="carousel-card-body">
                           <Card.Title>
-                            <a href={article.url} target="_blank">
+                            <a href={article.url} target="_blank" rel="noreferrer">
                               {article.title.toUpperCase()}
                             </a>
                           </Card.Title>

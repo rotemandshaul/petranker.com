@@ -1,27 +1,11 @@
 import React, { useState } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import PlayIconImg from './PlayIconImg';
 import BackgroundImage from 'gatsby-background-image';
 import Modal from 'react-bootstrap/Modal';
 import { Button } from 'react-bootstrap';
-
-function VerticallyCenteredModal(props) {
-  return (
-    <Modal {...props}>
-      <iframe
-        src={props.src}
-        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen={true}
-        width="940"
-        height="528"
-        scrolling="no"
-        allow="autoplay; fullscreen"
-        className="iframe-item"
-      ></iframe>
-    </Modal>
-  );
-}
+import { v4 as uuidv4 } from 'uuid';
+import PlayIconImg from './PlayIconImg';
 
 const VideoImage = ({ filename, alt, classname, title, src }) => (
   <StaticQuery
@@ -43,9 +27,7 @@ const VideoImage = ({ filename, alt, classname, title, src }) => (
       }
     `}
     render={(data) => {
-      const image = data.images.edges.find((n) => {
-        return n.node.relativePath.includes(filename);
-      });
+      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
 
       if (!image) return null;
 
@@ -67,7 +49,19 @@ const VideoImage = ({ filename, alt, classname, title, src }) => (
               <h2 className="video-info-title">{title}</h2>
             </div>
           </BackgroundImage>
-          <VerticallyCenteredModal src={src} show={modalShow} onHide={() => setModalShow(false)} />
+
+          <Modal src={src} show={modalShow} onHide={() => setModalShow(false)}>
+            <iframe
+              src={src}
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; autoplay; fullscreen"
+              allowFullScreen
+              width="940"
+              height="528"
+              scrolling="no"
+              className="iframe-item"
+              title={uuidv4()}
+            />
+          </Modal>
         </>
       );
     }}

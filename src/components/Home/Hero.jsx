@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import HeroImg from '../Image/HeroImg';
+import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import HeroImg from '../Image/HeroImg';
 import HomepageContext from '../../context/context';
 
 const Hero = () => {

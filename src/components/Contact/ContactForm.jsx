@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { navigate } from 'gatsby-link';
 import { Container } from 'react-bootstrap';
@@ -5,7 +6,7 @@ import HeroImg from '../Image/HeroImg';
 
 function encode(data) {
   return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map((key) => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
     .join('&');
 }
 
@@ -38,8 +39,8 @@ const ContactForm = () => {
           <div className="hero-text-wrapper">
             <p className="contact-info">
               You can contact Rotem via email at{' '}
-              <a href="mailto:rotem@boredomlab.org">rotem@boredomlab.org</a> or you can fill out the
-              form below.
+              <a href="rotem@petranker.com">rotem@petranker.com</a> or you can fill out the form
+              below.
             </p>
           </div>
           <div className="hero-image-holder">
@@ -116,7 +117,7 @@ const ContactForm = () => {
       </section>
       <section id="media-footer">
         <a href="#media-title">
-          <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+          <i className="fa fa-arrow-circle-up" aria-hidden="true" />
         </a>
       </section>
     </>

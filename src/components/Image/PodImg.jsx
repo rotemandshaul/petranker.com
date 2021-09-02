@@ -23,9 +23,7 @@ const PodImg = ({ filename, alt }) => (
       }
     `}
     render={(data) => {
-      const image = data.images.edges.find((n) => {
-        return n.node.relativePath.includes(filename);
-      });
+      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
 
       if (!image) return null;
 

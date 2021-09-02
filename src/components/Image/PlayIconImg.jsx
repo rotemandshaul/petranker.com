@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 
-const PlayIconImage = ({ filename, alt, classname }) => (
+const PlayIconImage = ({ alt, classname }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -23,9 +23,7 @@ const PlayIconImage = ({ filename, alt, classname }) => (
       }
     `}
     render={(data) => {
-      const image = data.images.edges.find((n) => {
-        return n.node.relativePath.includes('play.png');
-      });
+      const image = data.images.edges.find((n) => n.node.relativePath.includes('play.png'));
 
       if (!image) return null;
 
@@ -36,7 +34,6 @@ const PlayIconImage = ({ filename, alt, classname }) => (
 );
 
 PlayIconImage.propTypes = {
-  filename: PropTypes.string,
   alt: PropTypes.string,
   classname: PropTypes.string,
 };

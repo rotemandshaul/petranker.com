@@ -4,7 +4,8 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Container } from 'react-bootstrap';
-const Footer = ({ siteTitle, menuLinks }) => (
+
+const Footer = ({ menuLinks }) => (
   <section id="footer">
     <Container>
       <Navbar expand="lg" className="footer-links">
@@ -23,7 +24,7 @@ const Footer = ({ siteTitle, menuLinks }) => (
       </Navbar>
       <div className="credits-holder">
         Web-app developed by{' '}
-        <a href="https://github.com/shaulitto" title="shaulitto" target="_blank">
+        <a href="https://github.com/shaulitto" title="shaulitto" target="_blank" rel="noreferrer">
           shaulitto
         </a>{' '}
         ©Rotem Petranker. All rights reserved <br /> Icons made by{' '}
@@ -41,7 +42,6 @@ const Footer = ({ siteTitle, menuLinks }) => (
 );
 
 Footer.propTypes = {
-  siteTitle: PropTypes.string,
   /* eslint-disable react/forbid-prop-types */
   menuLinks: PropTypes.array,
 };

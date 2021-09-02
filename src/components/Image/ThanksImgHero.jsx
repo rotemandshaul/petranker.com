@@ -25,9 +25,7 @@ const ThanksImgHero = ({ filename, alt, classname }) => (
       }
     `}
     render={(data) => {
-      const image = data.images.edges.find((n) => {
-        return n.node.relativePath.includes(filename);
-      });
+      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
 
       if (!image) return null;
 
@@ -36,7 +34,7 @@ const ThanksImgHero = ({ filename, alt, classname }) => (
         <BackgroundImage alt={alt} fluid={imageFluid} className={classname}>
           <section id="thanks-title">
             <Container>
-              <Fade bottom={true} duration={1500} delay={1000} distance="50px">
+              <Fade bottom duration={1500} delay={1000} distance="50px">
                 <h1>
                   Thank You for <br /> Contacting Rotem
                 </h1>

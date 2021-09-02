@@ -279,7 +279,7 @@ export const videosData = [
     title: `Can Psychedelics Transform Mental-Health Care? | The Agenda`,
     date: `02/2021`,
     img: `video-1_thumbnail.png`,
-    iframe: 'https://www.youtube.com/watch?v=tfl1cof56c0',
+    iframe: 'https://www.youtube.com/embed/tfl1cof56c0',
   },
   {
     id: `video1`,
@@ -412,7 +412,8 @@ export const academiaData = {
     },
     {
       id: 'publication11',
-      title: 'The metronome response task for measuring mind wandering: Replication attempt and extension of three studies by Seli et al',
+      title:
+        'The metronome response task for measuring mind wandering: Replication attempt and extension of three studies by Seli et al',
       url: `https://link.springer.com/article/10.3758/s13414-020-02131-x`,
       year: '2020',
       month: `September`,

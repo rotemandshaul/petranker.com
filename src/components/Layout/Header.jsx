@@ -1,11 +1,11 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
-import useDocumentScrollThrottled from './useDocumentScrollThrottled';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import useDocumentScrollThrottled from './useDocumentScrollThrottled';
 
-const Header = ({ siteTitle, menuLinks }) => {
+const Header = ({ menuLinks }) => {
   const [showBorder, setShowBorder] = useState(false);
 
   useDocumentScrollThrottled((callbackData) => {
@@ -19,7 +19,7 @@ const Header = ({ siteTitle, menuLinks }) => {
   return (
     <Navbar expand="md" sticky="top" className={`navbar-${borderBottomStyle}`}>
       <Navbar.Brand id="nav-brand" href="/">
-        {'Rotem Petranker'}
+        Rotem Petranker
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
@@ -43,7 +43,6 @@ const Header = ({ siteTitle, menuLinks }) => {
 };
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
   /* eslint-disable react/forbid-prop-types */
   menuLinks: PropTypes.array,
 };
