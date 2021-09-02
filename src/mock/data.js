@@ -2,6 +2,7 @@
 // import { v1 as uuidv1 } from 'uuid';
 
 // HEAD DATA
+
 export const headData = {
   lang: 'en',
   index: {
@@ -59,7 +60,8 @@ export const heroData = {
   line2: `Associate Director, Psychedelic Studies Research Program at the University of Toronto.`,
   line3: `PhD Student, Clinical Psychology, Boredom Lab, York University.`,
   cta: `Initiatives`,
-}
+};
+
 // HOME PAGE CARDS DATA
 export const cardsData = [
   {
@@ -86,8 +88,7 @@ export const cardsData = [
     title: 'Psychedelic Studies Research Program',
     text: `Rotem co-founded the Psychedelic Studies Research Program with Dr. Norman Farb and Thomas Anderson, creating a psychedelics research hub.`,
     btntext: 'PSRP',
-    url:
-      'https://www.utm.utoronto.ca/psychedelics/welcome-psychedelic-studies-research-program-utm',
+    url: `https://www.utm.utoronto.ca/psychedelics/welcome-psychedelic-studies-research-program-utm`,
     fade: 'right',
   },
   {
@@ -118,6 +119,13 @@ export const cardsData = [
 
 // ARTICLES
 export const articlesData = [
+  {
+    id: `article-3`,
+    title: `The Magic of Mushrooms`,
+    url: `https://magazine.yorku.ca/issues/summer-2021/the-magic-of-mushrooms/`,
+    date: `07/2021`,
+    img: 'article-3.png',
+  },
   {
     id: `article-2`,
     title: `People who microdose psychedelic drugs report that the benefits greatly outweigh the drawbacks`,
@@ -267,6 +275,13 @@ export const podcastData = [
 // VIDEOS
 export const videosData = [
   {
+    id: `video-1`,
+    title: `Can Psychedelics Transform Mental-Health Care? | The Agenda`,
+    date: `02/2021`,
+    img: `video-1_thumbnail.png`,
+    iframe: 'https://www.youtube.com/watch?v=tfl1cof56c0',
+  },
+  {
     id: `video1`,
     title: `The psychedelic renaissance and open science - Rotem Petranker`,
     date: `11/2020`,
@@ -292,7 +307,7 @@ export const videosData = [
     title: `Microdosing Psychedelics: Characteristics and Correlates (Petranker)`,
     date: `09/2019`,
     img: `video4_thumbnail.png`,
-    iframe: "https://www.citynews1130.com/video/iframe/593482582001/SyxzIeNcgb/6035356169001",
+    iframe: `https://www.citynews1130.com/video/iframe/593482582001/SyxzIeNcgb/6035356169001`,
   },
   {
     id: `videos5`,
@@ -369,8 +384,7 @@ export const academiaData = {
     {
       id: 'publication7',
       title: 'Psychedelic microdosing benefits and challenges: an empirical codebook',
-      url:
-        'https://harmreductionjournal.biomedcentral.com/articles/10.1186/s12954-019-0308-4?optIn=true',
+      url: `https://harmreductionjournal.biomedcentral.com/articles/10.1186/s12954-019-0308-4?optIn=true`,
       year: '2019',
       month: `July`,
     },
@@ -385,32 +399,28 @@ export const academiaData = {
     {
       id: 'publication9',
       title: 'Psychedelic Research and the Need for Transparency: Polishing Alice’s Looking Glass',
-      url:
-        'https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01681/full?fbclid=IwAR1PWW9VKcL5qEcKdQ8av1N-fTq8BrJpVs14ESYKslOviIbAN7jybAusz4k',
+      url: `https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01681/full?fbclid=IwAR1PWW9VKcL5qEcKdQ8av1N-fTq8BrJpVs14ESYKslOviIbAN7jybAusz4k`,
       year: '2020',
       month: `July`,
     },
     {
       id: 'publication10',
       title: 'Microdosing psychedelics: Demographics, practices, and psychiatric comorbidities',
-      url:
-        'https://journals.sagepub.com/doi/abs/10.1177/0269881120908004',
+      url: 'https://journals.sagepub.com/doi/abs/10.1177/0269881120908004',
       year: '2020',
       month: `February`,
     },
     {
       id: 'publication11',
       title: 'The metronome response task for measuring mind wandering: Replication attempt and extension of three studies by Seli et al',
-      url:
-        'https://link.springer.com/article/10.3758/s13414-020-02131-x',
+      url: `https://link.springer.com/article/10.3758/s13414-020-02131-x`,
       year: '2020',
       month: `September`,
     },
     {
       id: 'publication12',
       title: `Microdosing psychedelics: Subjective benefits and challenges, substance testing behavior, and the relevance of intention`,
-      url:
-        'https://journals.sagepub.com/doi/abs/10.1177/0269881120953994',
+      url: 'https://journals.sagepub.com/doi/abs/10.1177/0269881120953994',
       year: '2020',
       month: `October`,
     },

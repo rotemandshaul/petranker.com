@@ -6,7 +6,7 @@ import HomepageContext from '../../context/context';
 
 const Hero = () => {
   const { hero } = useContext(HomepageContext);
-  const { img, title, line1, line2, line3, line4, cta } = hero;
+  const { img, title, line1, line2, line3, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
