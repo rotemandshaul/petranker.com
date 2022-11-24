@@ -1,6 +1,6 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   pathPrefix: '/petranker.com',
@@ -12,7 +12,7 @@ module.exports = {
         trackingId: `process.env.GA_TRACKING_ID`,
         head: true,
       },
-  },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,

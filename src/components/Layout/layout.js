@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container } from 'react-bootstrap';
 import { headData, menuLinks } from '../../mock/data';
 import Header from './Header';
 import Footer from './Footer';

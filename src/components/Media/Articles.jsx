@@ -1,9 +1,9 @@
-import React, { useContext, useState, useEffect } from 'react';
-import HomepageContext from '../../context/context';
-import ArticleImg from '../Image/ArticleImg';
+import React, { useContext } from 'react';
 import Card from 'react-bootstrap/Card';
 import CardDeck from 'react-bootstrap/CardDeck';
 import { Container } from 'react-bootstrap';
+import ArticleImg from '../Image/ArticleImg';
+import HomepageContext from '../../context/context';
 
 const Articles = () => {
   const { articles } = useContext(HomepageContext);
@@ -25,7 +25,7 @@ const Articles = () => {
                 </div>
                 <Card.Body>
                   <Card.Title>
-                    <a href={article.url} target="_blank">
+                    <a href={article.url} target="_blank" rel="noreferrer">
                       {article.title}
                     </a>
                   </Card.Title>
@@ -42,7 +42,7 @@ const Articles = () => {
                 </div>
                 <Card.Body>
                   <Card.Title>
-                    <a href={article.url} target="_blank">
+                    <a href={article.url} target="_blank" rel="noreferrer">
                       {article.title}
                     </a>
                   </Card.Title>
@@ -58,7 +58,7 @@ const Articles = () => {
                 </div>
                 <Card.Body>
                   <Card.Title>
-                    <a href={article.url} target="_blank">
+                    <a href={article.url} target="_blank" rel="noreferrer">
                       {article.title}
                     </a>
                   </Card.Title>
@@ -74,7 +74,7 @@ const Articles = () => {
                 </div>
                 <Card.Body>
                   <Card.Title>
-                    <a href={article.url} target="_blank">
+                    <a href={article.url} target="_blank" rel="noreferrer">
                       {article.title}
                     </a>
                   </Card.Title>
@@ -90,7 +90,7 @@ const Articles = () => {
                 </div>
                 <Card.Body>
                   <Card.Title>
-                    <a href={article.url} target="_blank">
+                    <a href={article.url} target="_blank" rel="noreferrer">
                       {article.title}
                     </a>
                   </Card.Title>

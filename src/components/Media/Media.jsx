@@ -23,9 +23,9 @@ function Media() {
     <HomepageProvider value={{ articles, podcasts, videos }}>
       <Layout>
         <section id="media-title">
-          <h1>Here are all of Rotem's media appearences</h1>
+          <h1>Here are all of Rotem's media appearances</h1>
           <a href="#media-video">
-            <i className="fa fa-arrow-circle-down" aria-hidden="true"></i>
+            <i className="fa fa-arrow-circle-down" aria-hidden="true" />
           </a>
         </section>
         <Videos />
@@ -33,7 +33,7 @@ function Media() {
         <Articles />
         <section id="media-footer">
           <a href="#media-title">
-            <i className="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            <i className="fa fa-arrow-circle-up" aria-hidden="true" />
           </a>
         </section>
       </Layout>
