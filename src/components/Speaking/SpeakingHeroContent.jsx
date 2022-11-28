@@ -24,9 +24,7 @@ const AcademiaHeroContent = ({ filename, alt, classname }) => (
       }
     `}
     render={(data) => {
-      const image = data.images.edges.find((n) => {
-        return n.node.relativePath.includes(filename);
-      });
+      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
 
       if (!image) return null;
 
@@ -48,8 +46,6 @@ const AcademiaHeroContent = ({ filename, alt, classname }) => (
             <h1 style={{ paddingBottom: '2rem' }}>Speaking & Talks</h1>
             <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
               <p>
-                {/* Rotem can give talks in a variety of venues to people with varied previous knowledge
-              about psychedelics and microdosing. */}
                 Rotem has given talks in a variety of venues to diverse audiences ranging from
                 laypeople to experts.
               </p>

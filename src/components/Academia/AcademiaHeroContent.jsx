@@ -24,9 +24,7 @@ const AcademiaHeroContent = ({ filename, alt, classname }) => (
       }
     `}
     render={(data) => {
-      const image = data.images.edges.find((n) => {
-        return n.node.relativePath.includes(filename);
-      });
+      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
 
       if (!image) return null;
 
@@ -64,17 +62,8 @@ const AcademiaHeroContent = ({ filename, alt, classname }) => (
             </Fade>
             <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
               <p>
-                He is currently a clinical psychology PhD student at York University, working under
-                the tutelage of Dr. John Eastwood at the{' '}
-                <a
-                  href="http://boredomlab.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontSize: '100%' }}
-                >
-                  Boredom lab
-                </a>
-                .
+                He is currently a psychology PhD candidate at McMaster University, working with Dr.
+                David Shore.
               </p>
             </Fade>
             <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">

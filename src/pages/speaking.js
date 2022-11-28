@@ -20,5 +20,5 @@ const Speakingpage = () => {
       <Speaking />
     </>
   );
-}
+};
 export default Speakingpage;

@@ -20,5 +20,5 @@ const Consultingpage = () => {
       <Consulting />
     </>
   );
-}
+};
 export default Consultingpage;

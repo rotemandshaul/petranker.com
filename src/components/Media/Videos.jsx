@@ -6,8 +6,8 @@ import VideoImg from '../Image/VideoImg';
 const Videos = () => {
   const { videos } = useContext(HomepageContext);
 
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
+  const [, setIsDesktop] = useState(false);
+  const [, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth > 769) {

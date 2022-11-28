@@ -20,5 +20,5 @@ const Aboutpage = () => {
       <About />
     </>
   );
-}
+};
 export default Aboutpage;

@@ -20,5 +20,5 @@ const Mediapage = () => {
       <Media />
     </>
   );
-}
+};
 export default Mediapage;

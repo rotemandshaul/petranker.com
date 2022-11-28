@@ -2,7 +2,6 @@
 import React from 'react';
 import { navigate } from 'gatsby-link';
 import { Container } from 'react-bootstrap';
-import HeroImg from '../Image/HeroImg';
 
 function encode(data) {
   return Object.keys(data)
@@ -29,29 +28,12 @@ const ContactForm = () => {
       }),
     })
       .then(() => navigate(form.getAttribute('action')))
+      // eslint-disable-next-line no-alert
       .catch((error) => alert(error));
   };
 
   return (
     <>
-      <section id="media-title">
-        <Container className="contact-hero-holder">
-          <div className="hero-text-wrapper">
-            <p className="contact-info">
-              You can contact Rotem via email at{' '}
-              <a href="rotem@petranker.com">rotem@petranker.com</a> or you can fill out the form
-              below.
-            </p>
-          </div>
-          <div className="hero-image-holder">
-            <HeroImg
-              alt="contact_headshot"
-              filename="contact_headshot.png"
-              classname="hero-image"
-            />
-          </div>
-        </Container>
-      </section>
       <section id="form-section">
         <Container>
           <form
@@ -77,7 +59,7 @@ const ContactForm = () => {
                   type="text"
                   name="name"
                   required
-                  placeHolder="Your Name*"
+                  placeholder="Your Name*"
                   onChange={handleChange}
                 />
               </label>
@@ -90,7 +72,7 @@ const ContactForm = () => {
                   type="email"
                   name="email"
                   required
-                  placeHolder="Your Email Address*"
+                  placeholder="Your Email Address*"
                   onChange={handleChange}
                 />
               </label>
@@ -102,7 +84,7 @@ const ContactForm = () => {
                   className="message-input"
                   name="message"
                   required
-                  placeHolder="Your Message for Rotem*"
+                  placeholder="Your Message for Rotem*"
                   onChange={handleChange}
                 />
               </label>

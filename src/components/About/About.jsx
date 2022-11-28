@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Layout from '../Layout/layout';
-import AboutHero from '../About/AboutHero';
-import AboutCloser from '../About/AboutCloser';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import Layout from '../Layout/layout';
+import AboutHero from './AboutHero';
+import AboutCloser from './AboutCloser';
 
 const About = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -21,7 +21,7 @@ const About = () => {
         <section id="media-title">
           <h1>About Rotem</h1>
           <a href="#about-top">
-            <i className="fa fa-arrow-circle-down" aria-hidden="true"></i>
+            <i className="fa fa-arrow-circle-down" aria-hidden="true" />
           </a>
         </section>
         <section id="about-top">
@@ -125,7 +125,7 @@ const About = () => {
         </section>
         <section id="media-footer">
           <a href="#media-title">
-            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            <i className="fa fa-arrow-circle-up" aria-hidden="true" />
           </a>
         </section>
       </Layout>

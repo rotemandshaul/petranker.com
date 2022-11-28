@@ -20,5 +20,5 @@ const Academiapage = () => {
       <Academia />
     </>
   );
-}
+};
 export default Academiapage;

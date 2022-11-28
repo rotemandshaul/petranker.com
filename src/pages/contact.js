@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout/layout';
+import ContactHero from '../components/Contact/ContactHero';
 import ContactForm from '../components/Contact/ContactForm';
 import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,6 +16,7 @@ const Contactpage = () => (
       <meta name="description" content={headData.contact.description} />
     </Helmet>
     <Layout>
+      <ContactHero />
       <ContactForm />
     </Layout>
   </>

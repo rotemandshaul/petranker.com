@@ -26,7 +26,7 @@ const Header = ({ menuLinks }) => {
         <Nav as="ul" id="nav">
           {menuLinks.map((link) => (
             <Nav.Item as="li" key={link.id}>
-              <Link to={link.link} key={link.id} activeStyle={{ borderBottom: 'solid 2px' }}>
+              <Link to={link.link} key={link.id}>
                 {link.name}
               </Link>
             </Nav.Item>

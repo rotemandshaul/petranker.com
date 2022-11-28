@@ -26,18 +26,18 @@ export default function HTML({
           crossOrigin="anonymous"
         />
         {headComponents}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2DWP5XXL9"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2DWP5XXL9" />
         <script
-        dangerouslySetInnerHTML={{
-        __html: `
+          dangerouslySetInnerHTML={{
+            __html: `
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'GA_TRACKING_ID');
         `,
-        }}
-/>
+          }}
+        />
       </head>
       <body {...bodyAttributes}>
         {preBodyComponents}

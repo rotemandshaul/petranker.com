@@ -9,6 +9,11 @@ export const headData = {
     title: 'Rotem Petranker | Psychedelics Researcher',
     description: `Rotem Petranker, is a scientist-clinician, public speaker, scientific consultant, and the director of the Canadian Centre for Psychedelic Science.`,
   },
+  counseling: {
+    title: 'Rotem Petranker | Registered Psychotherapist, Bsc, MA',
+    description:
+      "Counselling with Rotem Petranker: Individual therapy with a focus on Depression, anxiety, & OCD. As Canada's lead expert on the subject, Rotem also offers microdosing coaching.",
+  },
   academia: {
     title: 'Rotem Petranker | Psychedelic Scholar - Academic Publications',
     description:
@@ -44,12 +49,13 @@ export const headData = {
 // MENUE LINKS
 export const menuLinks = [
   { name: 'Home', link: '/', id: 'link0' },
-  { name: 'Academic Background', link: '/academia', id: 'link1' },
-  { name: 'Speaking', link: '/speaking', id: 'link2' },
-  { name: 'Consulting', link: '/consulting', id: 'link3' },
-  { name: 'Media', link: '/media', id: 'link4' },
-  { name: 'About Rotem', link: '/about-rotem', id: 'link5' },
-  { name: 'Contact', link: '/contact', id: 'link6' },
+  { name: 'Counselling', link: '/counselling', id: 'link1' },
+  { name: 'Academic Background', link: '/academia', id: 'link2' },
+  { name: 'Speaking', link: '/speaking', id: 'link3' },
+  { name: 'Consulting', link: '/consulting', id: 'link4' },
+  { name: 'Media', link: '/media', id: 'link5' },
+  { name: 'About Rotem', link: '/about-rotem', id: 'link6' },
+  { name: 'Contact', link: '/contact', id: 'link7' },
 ];
 
 // HERO DATA
@@ -58,7 +64,7 @@ export const heroData = {
   title: 'Rotem Petranker',
   line1: `Director, Canadian Centre for Psychedelic Science.`,
   line2: `Associate Director, Psychedelic Studies Research Program at the University of Toronto.`,
-  line3: `PhD Student, Clinical Psychology, Boredom Lab, York University.`,
+  line3: `PhD Candidate, Psychology and Neuroscience, McMaster University.`,
   cta: `Initiatives`,
 };
 
@@ -424,6 +430,52 @@ export const academiaData = {
       url: 'https://journals.sagepub.com/doi/abs/10.1177/0269881120953994',
       year: '2020',
       month: `October`,
+    },
+    {
+      id: 'publication13',
+      title:
+        'The metronome response task for measuring mind wandering: Replication attempt and extension of three studies by Seli et al',
+      url: 'https://link.springer.com/article/10.3758/s13414-020-02131-x',
+      year: '2021',
+    },
+    {
+      id: 'publication14',
+      title:
+        'Social interaction context shapes emotion recognition through body language, not facial expressions.',
+      url: 'https://psycnet.apa.org/record/2020-02994-001',
+      year: '2021',
+    },
+    {
+      id: 'publication15',
+      title:
+        'Sitting with it: An investigation of the relationship between trait mindfulness and sustained attention',
+      url: 'https://www.sciencedirect.com/science/article/abs/pii/S1053810021000271',
+      year: '2021',
+    },
+    {
+      id: 'publication16',
+      title:
+        'Microdosing psychedelics: Subjective benefits and challenges, substance testing behavior, and the relevance of intention',
+      url: 'https://journals.sagepub.com/doi/abs/10.1177/0269881120953994',
+      year: '2022',
+    },
+    {
+      id: 'publication17',
+      title: 'Microdosing as a response to the meaning crisis: a qualitative analysis',
+      url: 'https://journals.sagepub.com/doi/full/10.1177/00221678221075076',
+      year: '2022',
+    },
+    {
+      id: 'publication18',
+      title: 'Manifest your desires: Psychedelics and the self-help industry',
+      url: 'https://www.sciencedirect.com/science/article/abs/pii/S0955395922001232',
+      year: '2022',
+    },
+    {
+      id: 'publication19',
+      title: 'Set and setting in microdosing: an oft-overlooked principle',
+      url: 'https://link.springer.com/article/10.1007/s00213-022-06249-8',
+      year: '2022',
     },
   ],
 };

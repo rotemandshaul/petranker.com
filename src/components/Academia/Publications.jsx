@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 
 import { academiaData } from '../../mock/data';
@@ -10,16 +9,12 @@ function Publications() {
   const [publicationsList, setPublicationsList] = useState(publications);
 
   const sortByYear = () => {
-    const sorted = [...publicationsList].sort((a, b) => {
-      return b.year - a.year;
-    });
+    const sorted = [...publicationsList].sort((a, b) => b.year - a.year);
     setPublicationsList(sorted);
   };
 
   const sortByTitle = () => {
-    const sorted = [...publicationsList].sort((a, b) => {
-      return a.title.localeCompare(b.title);
-    });
+    const sorted = [...publicationsList].sort((a, b) => a.title.localeCompare(b.title));
     setPublicationsList(sorted);
   };
 
@@ -31,12 +26,12 @@ function Publications() {
           <tr>
             <th>
               <a href="#publications" onClick={sortByTitle} style={{ color: 'black' }}>
-                Title <i class="fa fa-sort" aria-hidden="true" />
+                Title <i className="fa fa-sort" aria-hidden="true" />
               </a>
             </th>
             <th>
               <a href="#publications" onClick={sortByYear} style={{ color: 'black' }}>
-                Year <i class="fa fa-sort" aria-hidden="true" />
+                Year <i className="fa fa-sort" aria-hidden="true" />
               </a>
             </th>
           </tr>

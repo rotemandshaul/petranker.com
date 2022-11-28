@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Title from './Title';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
-import HomepageContext from '../../context/context';
-import CardsImg from '../Image/CardsImg';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
+import HomepageContext from '../../context/context';
+import CardsImg from '../Image/CardsImg';
+import Title from './Title';
 
 const CardsTop = () => {
   const { cards } = useContext(HomepageContext);
@@ -47,7 +47,11 @@ const CardsTop = () => {
                   delay={500}
                   distance="30px"
                 >
-                  <CardsImg alt={`${id}logo | https://www.flaticon.com/authors/eucalyp`} filename={logo} classname="card-image-bottom" />
+                  <CardsImg
+                    alt={`${id}logo | https://www.flaticon.com/authors/eucalyp`}
+                    filename={logo}
+                    classname="card-image-bottom"
+                  />
                 </Fade>
                 <Fade
                   left={isDesktop}

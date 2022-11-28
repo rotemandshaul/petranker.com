@@ -3,9 +3,13 @@
   -webkit-background-color: #e0eafc;
   position: sticky;
   margin: 0;
+  padding-left: 1rem; 
+  padding-right: 1rem;
 
   @include respond(phone) {
     justify-content: center;
+    padding-left: 0; 
+    padding-right: 0;
   }
 }
 

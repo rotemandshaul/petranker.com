@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import Fade from 'react-reveal/Fade';
 import Layout from '../Layout/layout';
 import ConsultingImg from '../Image/ConsultingImg';
-import Fade from 'react-reveal/Fade';
 
 const Consulting = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -44,7 +44,11 @@ const Consulting = () => {
           <div className="partner-holder">
             <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
               <div className="consulting-partner-link">
-                <a href="https://www.petranker.com/contact" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.petranker.com/contact"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <ConsultingImg
                     alt="consulting_image"
                     filename="private_consulting.png"
