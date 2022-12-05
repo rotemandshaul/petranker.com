@@ -21,8 +21,8 @@ const Counsellingpage = () => {
       </Helmet>
       <Layout>
         <Counselling />
-        <div id="media-header">
-          <h1>Directly Book With Rotem</h1>
+        <div>
+          <h1 className="hero-info-text">Directly Book With Rotem:</h1>
         </div>
         <ContactForm />
       </Layout>
