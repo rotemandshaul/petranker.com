@@ -49,7 +49,7 @@ export const headData = {
 // MENUE LINKS
 export const menuLinks = [
   { name: 'Home', link: '/', id: 'link0' },
-  { name: 'Counselling', link: '/counselling', id: 'link1' },
+//   { name: 'Counselling', link: '/counselling', id: 'link1' },
   { name: 'Academic Background', link: '/academia', id: 'link2' },
   { name: 'Speaking', link: '/speaking', id: 'link3' },
   { name: 'Consulting', link: '/consulting', id: 'link4' },
