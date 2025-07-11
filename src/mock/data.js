@@ -61,10 +61,10 @@ export const menuLinks = [
 // HERO DATA
 export const heroData = {
   img: 'headshot.png',
-  title: 'Rotem Petranker',
+  title: 'Rotem Petranker, Ph.D.',
   line1: `Director, Canadian Centre for Psychedelic Science.`,
   line2: `Associate Director, Psychedelic Studies Research Program at the University of Toronto.`,
-  line3: `PhD Candidate, Psychology and Neuroscience, McMaster University.`,
+  line3: `Post-Doctoral Fellow, Department of Surgery, McMaster University.`,
   cta: `Initiatives`,
 };
 
