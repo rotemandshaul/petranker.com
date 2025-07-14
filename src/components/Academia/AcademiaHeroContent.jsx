@@ -62,8 +62,8 @@ const AcademiaHeroContent = ({ filename, alt, classname }) => (
             </Fade>
             <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
               <p>
-                He is currently a psychology PhD candidate at McMaster University, working with Dr.
-                David Shore.
+                Rotem earned his PhD from McMaster University, working with Dr. David Shore.
+                His dissertation focused on a double-blind, placebo-controlled psilocybin study.
               </p>
             </Fade>
             <Fade bottom={isMobile} duration={1500} delay={500} distance="30px">
